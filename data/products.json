@@ -1,0 +1,35 @@
+{
+	"highcharts": {
+		"name": "Highcharts JS",
+		"code": "",
+		"main": "highcharts.js",
+		"zip": "Highcharts"
+	},
+	"stock": {
+		"name": "Highcharts Stock",
+		"code": "stock",
+		"main": "highstock.js",
+		"zip": "Highcharts-Stock",
+		"type": "add-product",
+		"description": "Create stock or general timeline charts for any web and mobile project.",
+		"cover": "https://wp-assets.highcharts.com/svg/icon_stock_light_v2.svg"
+	},
+	"maps": {
+		"name": "Highcharts Maps",
+		"code": "maps",
+		"main": "highmaps.js",
+		"zip": "Highcharts-Maps",
+		"description": "Create interactive map charts with drill-down and touch support.",
+		"cover": "https://wp-assets.highcharts.com/svg/icon_map_light.svg",
+		"type": "add-product"
+	},
+	"gantt": {
+		"name": "Highcharts Gantt",
+		"code": "gantt",
+		"main": "highcharts-gantt.js",
+		"zip": "Highcharts-Gantt",
+		"type": "add-product",
+		"cover": "https://wp-assets.highcharts.com/svg/icon_gantt_light.svg",
+		"description": "Create interactive charts for allocating and displaying tasks, events, and resources along a timeline."
+	}
+}
