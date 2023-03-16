@@ -3,14 +3,14 @@ let data = [{
 	type: 'ADDITIONAL PRODUCT',
 	name: 'Highcharts Maps',
 	code: 'highcharts',
-	description: 'Create interactive map charts with drill-down and touch support.',
+	description: '创建具有下钻和触摸支持的互动地图',
 	link: '/products/maps',
 	icon: 'https://wp-assets.highcharts.com/svg/icon_map_light.svg'
 }, {
 	type: 'ADDITIONAL PRODUCT',
 	name: 'Highcharts Stock',
 	code: 'stock',
-	description: 'Create stock or general timeline charts for any web and mobile project.',
+	description: '为任何 Web 和手机应用创建股票或时间序列图表',
 	link: '/products/stock',
 	icon: 'https://wp-assets.highcharts.com/svg/icon_stock_light_v2.svg'
 }, {

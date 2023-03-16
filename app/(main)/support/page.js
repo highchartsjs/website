@@ -28,7 +28,7 @@ export default function Support() {
 									<div class="card">
 										<div class="card-header p-0" id="heading1-general">
 											<div class="d-flex align-items-center mx-1 ">
-												<h3> <button class="btn btn-link btn-block text-left acc-btn" type="button" data-target="#collapse1-general" aria-expanded="false" aria-controls="collapse1-general"> <i class="fa arrow mx-1 fa-caret-right" aria-hidden="true"></i>I have a general technical question</button></h3>
+												<h3> <button class="btn btn-link btn-block text-left acc-btn" type="button" data-target="#collapse1-general" aria-expanded="false" aria-controls="collapse1-general"> <i class="fa arrow mx-1 fa-caret-right" aria-hidden="true"></i>我有个一般的技术问题</button></h3>
 											</div>
 										</div>
 										<div id="collapse1-general" class="mx-1 pl-2 collapse" aria-labelledby="heading1-general" data-parent="#accordion-parent-general" >
@@ -48,7 +48,7 @@ export default function Support() {
 									<div class="card">
 										<div class="card-header p-0" id="heading2-general">
 											<div class="d-flex align-items-center mx-1  top-border">
-												<h3> <button class="btn btn-link btn-block text-left acc-btn" type="button" data-target="#collapse2-general" aria-expanded="false" aria-controls="collapse2-general"> <i class="fa arrow mx-1 fa-caret-right" aria-hidden="true"></i>I have a specific programming question</button></h3>
+												<h3> <button class="btn btn-link btn-block text-left acc-btn" type="button" data-target="#collapse2-general" aria-expanded="false" aria-controls="collapse2-general"> <i class="fa arrow mx-1 fa-caret-right" aria-hidden="true"></i>我有一个具体的编程问题</button></h3>
 											</div>
 										</div>
 										<div id="collapse2-general" class="mx-1 pl-2 collapse" aria-labelledby="heading2-general" data-parent="#accordion-parent-general">
@@ -61,7 +61,7 @@ export default function Support() {
 										<div class="card-header p-0" id="heading3-general">
 											<div class="d-flex align-items-center mx-1  top-border">
 												<h3> 
-													<button class="btn btn-link btn-block text-left acc-btn" type="button" data-target="#collapse3-general" aria-expanded="false" aria-controls="collapse3-general"> <i class="fa arrow mx-1 fa-caret-down" aria-hidden="true"></i>I want to request a feature</button>
+													<button class="btn btn-link btn-block text-left acc-btn" type="button" data-target="#collapse3-general" aria-expanded="false" aria-controls="collapse3-general"> <i class="fa arrow mx-1 fa-caret-down" aria-hidden="true"></i>我想提交新的功能请求</button>
 												</h3>
 											</div>
 										</div>
@@ -76,7 +76,7 @@ export default function Support() {
 									<div class="card">
 										<div class="card-header p-0" id="heading4-general">
 											<div class="d-flex align-items-center mx-1  top-border">
-												<h3> <button class="btn btn-link btn-block text-left acc-btn" type="button" data-target="#collapse4-general" aria-expanded="false" aria-controls="collapse4-general"> <i class="fa fa-caret-right arrow mx-1" aria-hidden="true"></i>I have found a bug, and I can reproduce it</button></h3>
+												<h3> <button class="btn btn-link btn-block text-left acc-btn" type="button" data-target="#collapse4-general" aria-expanded="false" aria-controls="collapse4-general"> <i class="fa fa-caret-right arrow mx-1" aria-hidden="true"></i>我发现了一个 Bug，而且我可以重现它</button></h3>
 											</div>
 										</div>
 										<div id="collapse4-general" class="mx-1 pl-2 collapse " aria-labelledby="heading4-general" data-parent="#accordion-parent-general">
@@ -89,7 +89,7 @@ export default function Support() {
 									<div class="card">
 										<div class="card-header p-0" id="heading5-general">
 											<div class="d-flex align-items-center mx-1  top-border">
-												<h3> <button class="btn btn-link btn-block text-left acc-btn" type="button" data-target="#collapse5-general" aria-expanded="false" aria-controls="collapse5-general"> <i class="fa fa-caret-right arrow mx-1" aria-hidden="true"></i>How Highcharts supports accessibility</button></h3>
+												<h3> <button class="btn btn-link btn-block text-left acc-btn" type="button" data-target="#collapse5-general" aria-expanded="false" aria-controls="collapse5-general"> <i class="fa fa-caret-right arrow mx-1" aria-hidden="true"></i>Highcharts 如何支持无障碍访问的</button></h3>
 											</div>
 										</div>
 										<div id="collapse5-general" class="mx-1 pl-2 collapse " aria-labelledby="heading5-general" data-parent="#accordion-parent-general">
@@ -101,7 +101,7 @@ export default function Support() {
 									<div class="card">
 										<div class="card-header p-0" id="heading6-general">
 											<div class="d-flex align-items-center mx-1  top-border">
-												<h3> <button class="btn btn-link btn-block text-left acc-btn" type="button" data-target="#collapse6-general" aria-expanded="false" aria-controls="collapse6-general"> <i class="fa fa-caret-right arrow mx-1" aria-hidden="true"></i>I want to hire someone to implement Highcharts</button></h3>
+												<h3> <button class="btn btn-link btn-block text-left acc-btn" type="button" data-target="#collapse6-general" aria-expanded="false" aria-controls="collapse6-general"> <i class="fa fa-caret-right arrow mx-1" aria-hidden="true"></i>我想定制开发 Highcharts 相关的项目或扩展</button></h3>
 											</div>
 										</div>
 										<div id="collapse6-general" class="mx-1 pl-2 collapse " aria-labelledby="heading6-general" data-parent="#accordion-parent-general">

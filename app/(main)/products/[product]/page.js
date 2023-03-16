@@ -153,7 +153,7 @@ export default async function Page(props) {
 						<div class="container">
 							<div class="row">
 								<div class="col-12">
-									<h3 class="pt-2">{data.title} Features</h3>
+									<h3 class="pt-2">{data.title} 功能特性</h3>
 								</div>
 							</div>
 							<div class="row d-flex justify-content-center justify-content-sm-start">
@@ -186,7 +186,7 @@ export default async function Page(props) {
 						</>
 
 						:
-						<>  // Normal Product Pages
+						<>  
 							{
 								!data['core-features'] ? null :
 									<div class="content-fluid bkgWhite product-features features" id="features">
@@ -195,7 +195,7 @@ export default async function Page(props) {
 												<div class="col-12 col-md-3">
 													<div class="row">
 														<div class="col-8 col-md-12">
-															<h3>Core Highcharts Features</h3>
+															<h3>Highcharts 基础功能特性</h3>
 														</div>
 														<div class="col-4 col-md-12"> <img src="https://wp-assets.highcharts.com/svg/accessibility_illo.svg" alt="" /></div>
 													</div>
@@ -240,19 +240,19 @@ export default async function Page(props) {
 											<div class="col-12 col-md-6 vibrant mb-3 card bkgGreenLight35">
 												<div class="p-md-1">
 													<div class="text-center card-header">
-														<h3>Join Our Vibrant Community</h3>
+														<h3>加入我们充满活力的社区</h3>
 													</div>
 													<p class="p-md-1 card-body">The most significant developer community of any premium charting tool on <a href="">GitHub</a>, <a href="">StackOverflow</a> and <a href="">Highcharts' Forums</a>, is eager to offer additional assistance, platform-specific implementation advice and inspiration when you need it.</p>
-													<div class="text-center card-footer"> <a href="/support" class="col-12 btn mb-1 btn-third text-decoration-none">Join the community</a></div>
+													<div class="text-center card-footer"> <a href="/support" class="col-12 btn mb-1 btn-third text-decoration-none">j加入社区</a></div>
 												</div>
 											</div>
 											<div class="col-12 col-md-6 documentation mb-3 card bkgPurple40">
 												<div class="p-lg-1">
 													<div class="text-center card-header">
-														<h3>Check out our documentation</h3>
+														<h3>查阅文档教程</h3>
 													</div>
 													<p class="p-lg-1 card-body">Our customers praise our documentation as easy to follow, extensive and well organized. Filled with helpful examples, our API reference will have you customizing your data visualizations in no time and make maintaining them a breeze.</p>
-													<div class="text-center card-footer"> <a href="/docs/index" class="col-12 btn mb-1 btn-third text-decoration-none">Check out the docs</a></div>
+													<div class="text-center card-footer"> <a href="/docs/index" class="col-12 btn mb-1 btn-third text-decoration-none">查阅文档</a></div>
 												</div>
 											</div>
 										</div>
