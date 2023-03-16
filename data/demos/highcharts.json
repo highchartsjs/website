@@ -1,0 +1,720 @@
+[
+	{
+		"name": "线图",
+		"code": "line",
+		"children": [
+			{
+				"code": "line-basic",
+				"name": "基础直线图",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/line-basic/thumbnail.svg"
+			},
+			{
+				"code": "line-ajax",
+				"name": "Ajax 获取数据，可点击的数据点",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/line-ajax/thumbnail.svg"
+			},
+			{
+				"code": "line-boost",
+				"name": "50 万数据直线图",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/line-boost/thumbnail.svg"
+			},
+			{
+				"code": "line-log-axis",
+				"name": "对数坐标轴",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/line-log-axis/thumbnail.svg"
+			},
+			{
+				"code": "spline-inverted",
+				"name": "曲线图，坐标轴翻转",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/spline-inverted/thumbnail.svg"
+			},
+			{
+				"code": "spline-plot-bands",
+				"name": "曲线图，标识区",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/spline-plot-bands/thumbnail.svg"
+			},
+			{
+				"code": "spline-symbols",
+				"name": "曲线图，标记",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/spline-symbols/thumbnail.svg"
+			},
+			{
+				"code": "spline-irregular-time",
+				"name": "不规则间隔的时间数据",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/spline-irregular-time/thumbnail.svg"
+			},
+			{
+				"code": "line-time-series",
+				"name": "可缩放的时间序列",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/line-time-series/thumbnail.png"
+			},
+			{
+				"code": "annotations",
+				"name": "标注",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/annotations/thumbnail.svg"
+			},
+			{
+				"code": "line-labels",
+				"name": "数据标签",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/line-labels/thumbnail.svg"
+			}
+		]
+	},
+	{
+		"name": "面积图",
+		"code": "area",
+		"children": [
+			{
+				"code": "area-basic",
+				"name": "基础面积图",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/area-basic/thumbnail.svg"
+			},
+			{
+				"code": "arearange",
+				"name": "面积范围图",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/arearange/thumbnail.svg"
+			},
+			{
+				"code": "arearange-line",
+				"name": "Area range and line",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/arearange-line/thumbnail.svg"
+			},
+			{
+				"code": "area-missing",
+				"name": "Area with missing points",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/area-missing/thumbnail.svg"
+			},
+			{
+				"code": "area-negative",
+				"name": "Area with negative values",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/area-negative/thumbnail.svg"
+			},
+			{
+				"code": "areaspline",
+				"name": "Area-spline",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/areaspline/thumbnail.svg"
+			},
+			{
+				"code": "area-inverted",
+				"name": "Inverted axes",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/area-inverted/thumbnail.svg"
+			},
+			{
+				"code": "area-stacked-percent",
+				"name": "Percentage area",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/area-stacked-percent/thumbnail.svg"
+			},
+			{
+				"code": "sparkline",
+				"name": "Sparkline charts",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/sparkline/thumbnail.png"
+			},
+			{
+				"code": "area-stacked",
+				"name": "Stacked area",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/area-stacked/thumbnail.svg"
+			},
+			{
+				"code": "streamgraph",
+				"name": "Streamgraph",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/streamgraph/thumbnail.svg"
+			}
+		]
+	},
+	{
+		"name": "柱形图",
+		"code": "column",
+		"children": [
+			{
+				"code": "bar-race",
+				"name": "Bar race",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/bar-race/thumbnail.svg"
+			},
+			{
+				"code": "column-basic",
+				"name": "Basic column",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/column-basic/thumbnail.svg"
+			},
+			{
+				"code": "bar-basic",
+				"name": "Basic bar",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/bar-basic/thumbnail.svg"
+			},
+			{
+				"code": "bar-negative-stack",
+				"name": "Bar with negative stack",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/bar-negative-stack/thumbnail.svg"
+			},
+			{
+				"code": "column-comparison",
+				"name": "Column comparison",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/column-comparison/thumbnail.svg"
+			},
+			{
+				"code": "columnrange",
+				"name": "Column range",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/columnrange/thumbnail.svg"
+			},
+			{
+				"code": "column-drilldown",
+				"name": "Column with drilldown",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/column-drilldown/thumbnail.svg"
+			},
+			{
+				"code": "column-negative",
+				"name": "Column with negative values",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/column-negative/thumbnail.svg"
+			},
+			{
+				"code": "column-rotated-labels",
+				"name": "Column with rotated labels",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/column-rotated-labels/thumbnail.svg"
+			},
+			{
+				"code": "column-parsed",
+				"name": "Data defined in a HTML table",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/column-parsed/thumbnail.svg"
+			},
+			{
+				"code": "column-placement",
+				"name": "Fixed placement columns",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/column-placement/thumbnail.svg"
+			},
+			{
+				"code": "column-stacked-and-grouped",
+				"name": "Stacked and grouped column",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/column-stacked-and-grouped/thumbnail.svg"
+			},
+			{
+				"code": "bar-stacked",
+				"name": "Stacked bar",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/bar-stacked/thumbnail.svg"
+			},
+			{
+				"code": "column-stacked",
+				"name": "Stacked column",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/column-stacked/thumbnail.svg"
+			},
+			{
+				"code": "column-stacked-percent",
+				"name": "Stacked percentage column",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/column-stacked-percent/thumbnail.svg"
+			}
+		]
+	},
+	{
+		"name": "饼形图",
+		"code": "pie",
+		"children": [
+			{
+				"code": "pie-basic",
+				"name": "Pie chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/pie-basic/thumbnail.svg"
+			},
+			{
+				"code": "pie-donut",
+				"name": "Donut chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/pie-donut/thumbnail.svg"
+			},
+			{
+				"code": "pie-drilldown",
+				"name": "Pie with drilldown",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/pie-drilldown/thumbnail.svg"
+			},
+			{
+				"code": "pie-gradient",
+				"name": "Pie with gradient fill",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/pie-gradient/thumbnail.svg"
+			},
+			{
+				"code": "pie-legend",
+				"name": "Pie with legend",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/pie-legend/thumbnail.svg"
+			},
+			{
+				"code": "pie-monochrome",
+				"name": "Pie with monochrome fill",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/pie-monochrome/thumbnail.svg"
+			},
+			{
+				"code": "pie-semi-circle",
+				"name": "Semi circle donut",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/pie-semi-circle/thumbnail.svg"
+			},
+			{
+				"code": "variable-radius-pie",
+				"name": "Variable radius pie",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/variable-radius-pie/thumbnail.svg"
+			}
+		]
+	},
+	{
+		"name": "散点及气泡图",
+		"code": "scatter",
+		"children": [
+			{
+				"code": "scatter-jitter",
+				"name": "Scatter plot with jitter",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/scatter-jitter/thumbnail.svg"
+			},
+			{
+				"code": "bubble",
+				"name": "Bubble chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/bubble/thumbnail.svg"
+			},
+			{
+				"code": "scatter",
+				"name": "Scatter plot",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/scatter/thumbnail.svg"
+			},
+			{
+				"code": "bubble-3d",
+				"name": "3D bubbles",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/bubble-3d/thumbnail.svg"
+			},
+			{
+				"code": "packed-bubble",
+				"name": "Packed bubble chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/packed-bubble/thumbnail.svg"
+			},
+			{
+				"code": "scatter-boost",
+				"name": "Scatter plot with 1 million points",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/scatter-boost/thumbnail.svg"
+			},
+			{
+				"code": "packed-bubble-split",
+				"name": "Split Packed bubble chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/packed-bubble-split/thumbnail.svg"
+			}
+		]
+	},
+	{
+		"name": "混合图",
+		"code": "combinations",
+		"children": [
+			{
+				"code": "combo-timeline",
+				"name": "Advanced timeline",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/combo-timeline/thumbnail.svg"
+			},
+			{
+				"code": "combo",
+				"name": "Column, line and pie",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/combo/thumbnail.svg"
+			},
+			{
+				"code": "combo-dual-axes",
+				"name": "Dual axes, line and column",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/combo-dual-axes/thumbnail.svg"
+			},
+			{
+				"code": "combo-meteogram",
+				"name": "Meteogram",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/combo-meteogram/thumbnail.svg"
+			},
+			{
+				"code": "combo-multi-axes",
+				"name": "Multiple axes",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/combo-multi-axes/thumbnail.svg"
+			},
+			{
+				"code": "combo-regression",
+				"name": "Scatter with regression line",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/combo-regression/thumbnail.svg"
+			},
+			{
+				"code": "synchronized-charts",
+				"name": "Synchronized charts",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/synchronized-charts/thumbnail.png"
+			}
+		]
+	},
+	{
+		"name": "样式模式 (CSS styling)",
+		"code": "styled",
+		"children": [
+			{
+				"code": "styled-mode-column",
+				"name": "Styled mode column",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/styled-mode-column/thumbnail.png"
+			},
+			{
+				"code": "styled-mode-pie",
+				"name": "Styled mode pie",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/styled-mode-pie/thumbnail.png"
+			}
+		]
+	},
+	{
+		"name": "无障碍访问",
+		"code": "accessible",
+		"children": [
+			{
+				"code": "accessible-line",
+				"name": "Accessible line chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/accessible-line/thumbnail.svg"
+			},
+			{
+				"code": "accessible-pie",
+				"name": "Accessible pie chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/accessible-pie/thumbnail.svg"
+			},
+			{
+				"code": "advanced-accessible",
+				"name": "Advanced accessible chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/advanced-accessible/thumbnail.svg"
+			},
+			{
+				"code": "sonification",
+				"name": "Sonification",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/sonification/thumbnail.svg"
+			}
+		]
+	},
+	{
+		"name": "动态交互",
+		"code": "dynamic",
+		"children": [
+			{
+				"code": "dynamic-click-to-add",
+				"name": "Click to add a point",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/dynamic-click-to-add/thumbnail.svg"
+			},
+			{
+				"code": "live-data",
+				"name": "Live data from dynamic CSV",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/live-data/thumbnail.svg"
+			},
+			{
+				"code": "dynamic-master-detail",
+				"name": "Master-detail chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/dynamic-master-detail/thumbnail.png"
+			},
+			{
+				"code": "responsive",
+				"name": "Responsive chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/responsive/thumbnail.svg"
+			},
+			{
+				"code": "dynamic-update",
+				"name": "Spline updating each second",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/dynamic-update/thumbnail.svg"
+			},
+			{
+				"code": "chart-update",
+				"name": "Update options after render",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/chart-update/thumbnail.svg"
+			}
+		]
+	},
+	{
+		"name": "3D 图",
+		"code": "3d",
+		"children": [
+			{
+				"code": "3d-area-multiple",
+				"name": "3D area chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/3d-area-multiple/thumbnail.svg"
+			},
+			{
+				"code": "3d-column-interactive",
+				"name": "3D column",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/3d-column-interactive/thumbnail.svg"
+			},
+			{
+				"code": "3d-column-null-values",
+				"name": "3D column with null and 0 values",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/3d-column-null-values/thumbnail.svg"
+			},
+			{
+				"code": "3d-column-stacking-grouping",
+				"name": "3D column with stacking and grouping",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/3d-column-stacking-grouping/thumbnail.svg"
+			},
+			{
+				"code": "cylinder",
+				"name": "3D cylinder",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/cylinder/thumbnail.svg"
+			},
+			{
+				"code": "3d-pie-donut",
+				"name": "3D donut",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/3d-pie-donut/thumbnail.svg"
+			},
+			{
+				"code": "funnel3d",
+				"name": "3D funnel",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/funnel3d/thumbnail.svg"
+			},
+			{
+				"code": "3d-pie",
+				"name": "3D pie",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/3d-pie/thumbnail.svg"
+			},
+			{
+				"code": "pyramid3d",
+				"name": "3D pyramid",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/pyramid3d/thumbnail.svg"
+			},
+			{
+				"code": "3d-scatter-draggable",
+				"name": "3D scatter chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/3d-scatter-draggable/thumbnail.svg"
+			}
+		]
+	},
+	{
+		"name": "仪表图",
+		"code": "gauges",
+		"children": [
+			{
+				"code": "gauge-activity",
+				"name": "Activity gauge",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/gauge-activity/thumbnail.svg"
+			},
+			{
+				"code": "bullet-graph",
+				"name": "Bullet graph",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/bullet-graph/thumbnail.png"
+			},
+			{
+				"code": "gauge-clock",
+				"name": "Clock",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/gauge-clock/thumbnail.svg"
+			},
+			{
+				"code": "gauge-speedometer",
+				"name": "Gauge series",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/gauge-speedometer/thumbnail.svg"
+			},
+			{
+				"code": "gauge-dual",
+				"name": "Gauge with dual axes",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/gauge-dual/thumbnail.svg"
+			},
+			{
+				"code": "gauge-solid",
+				"name": "Solid gauge",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/gauge-solid/thumbnail.png"
+			},
+			{
+				"code": "gauge-vu-meter",
+				"name": "VU meter",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/gauge-vu-meter/thumbnail.svg"
+			}
+		]
+	},
+	{
+		"name": "热力图",
+		"code": "heat",
+		"children": [
+			{
+				"code": "heatmap",
+				"name": "Heat map",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/heatmap/thumbnail.svg"
+			},
+			{
+				"code": "heatmap-canvas",
+				"name": "Large heat map",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/heatmap-canvas/thumbnail.svg"
+			},
+			{
+				"code": "treemap-large-dataset",
+				"name": "Large tree map",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/treemap-large-dataset/thumbnail.svg"
+			},
+			{
+				"code": "honeycomb-usa",
+				"name": "Tile map, honeycomb",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/honeycomb-usa/thumbnail.svg"
+			},
+			{
+				"code": "treemap-coloraxis",
+				"name": "Tree map with color axis",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/treemap-coloraxis/thumbnail.svg"
+			},
+			{
+				"code": "treemap-with-levels",
+				"name": "Tree map with levels",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/treemap-with-levels/thumbnail.svg"
+			}
+		]
+	},
+	{
+		"name": "更多",
+		"code": "more",
+		"children": [
+			{
+				"code": "arc-diagram",
+				"name": "Arc Diagram",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/arc-diagram/thumbnail.svg"
+			},
+			{
+				"code": "bellcurve",
+				"name": "Bell curve",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/bellcurve/thumbnail.svg"
+			},
+			{
+				"code": "box-plot",
+				"name": "Box plot",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/box-plot/thumbnail.svg"
+			},
+			{
+				"code": "column-pyramid",
+				"name": "Column pyramid chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/column-pyramid/thumbnail.svg"
+			},
+			{
+				"code": "dependency-wheel",
+				"name": "Dependency wheel",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/dependency-wheel/thumbnail.svg"
+			},
+			{
+				"code": "dumbbell",
+				"name": "Dumbbell series",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/dumbbell/thumbnail.svg"
+			},
+			{
+				"code": "error-bar",
+				"name": "Error bar",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/error-bar/thumbnail.svg"
+			},
+			{
+				"code": "euler-diagram",
+				"name": "Euler diagram",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/euler-diagram/thumbnail.svg"
+			},
+			{
+				"code": "flame",
+				"name": "Flame chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/flame/thumbnail.svg"
+			},
+			{
+				"code": "funnel",
+				"name": "Funnel chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/funnel/thumbnail.svg"
+			},
+			{
+				"code": "renderer",
+				"name": "General drawing",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/renderer/thumbnail.svg"
+			},
+			{
+				"code": "histogram",
+				"name": "Histogram",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/histogram/thumbnail.svg"
+			},
+			{
+				"code": "lollipop",
+				"name": "Lollipop series",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/lollipop/thumbnail.svg"
+			},
+			{
+				"code": "network-graph",
+				"name": "Network graph (force directed graph)",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/network-graph/thumbnail.svg"
+			},
+			{
+				"code": "organization-chart",
+				"name": "Organization chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/organization-chart/thumbnail.svg"
+			},
+			{
+				"code": "parallel-coordinates",
+				"name": "Parallel coordinates",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/parallel-coordinates/thumbnail.png"
+			},
+			{
+				"code": "pareto",
+				"name": "Pareto chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/pareto/thumbnail.svg"
+			},
+			{
+				"code": "parliament-chart",
+				"name": "Parliament (item) chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/parliament-chart/thumbnail.svg"
+			},
+			{
+				"code": "polar",
+				"name": "Polar (radar) chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/polar/thumbnail.svg"
+			},
+			{
+				"code": "polygon",
+				"name": "Polygon series",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/polygon/thumbnail.svg"
+			},
+			{
+				"code": "pyramid",
+				"name": "Pyramid chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/pyramid/thumbnail.svg"
+			},
+			{
+				"code": "polar-radial-bar",
+				"name": "Radial bar chart",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/polar-radial-bar/thumbnail.svg"
+			},
+			{
+				"code": "sankey-diagram",
+				"name": "Sankey diagram",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/sankey-diagram/thumbnail.svg"
+			},
+			{
+				"code": "polar-spider",
+				"name": "Spiderweb",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/polar-spider/thumbnail.svg"
+			},
+			{
+				"code": "sunburst",
+				"name": "Sunburst",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/sunburst/thumbnail.svg"
+			},
+			{
+				"code": "timeline",
+				"name": "Timeline",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/timeline/thumbnail.svg"
+			},
+			{
+				"code": "variwide",
+				"name": "Variwide",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/variwide/thumbnail.svg"
+			},
+			{
+				"code": "vector-plot",
+				"name": "Vector plot",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/vector-plot/thumbnail.svg"
+			},
+			{
+				"code": "venn-diagram",
+				"name": "Venn diagram",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/venn-diagram/thumbnail.svg"
+			},
+			{
+				"code": "waterfall",
+				"name": "Waterfall",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/waterfall/thumbnail.svg"
+			},
+			{
+				"code": "windbarb-series",
+				"name": "Wind barb",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/windbarb-series/thumbnail.svg"
+			},
+			{
+				"code": "polar-wind-rose",
+				"name": "Wind rose",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/polar-wind-rose/thumbnail.svg"
+			},
+			{
+				"code": "wordcloud",
+				"name": "Word cloud",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/wordcloud/thumbnail.svg"
+			},
+			{
+				"code": "x-range",
+				"name": "X-range series",
+				"img": "https://www.highcharts.com/demo/images/samples/highcharts/demo/x-range/thumbnail.svg"
+			}
+		]
+	}
+]

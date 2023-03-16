@@ -1,119 +1,47 @@
 'use client'
 
-const domain = process.env.NEXT_PUBLIC_DOMAIN;
-const ShopDomain = process.env.NEXT_PUBCLI_SHOPDOMAIN;
+import "@styles/components/header.scss";
 
-import Link from 'next/link';
-import Drilldown from './ui/Drilldown';
 
-const options = {
-   nav: [/*{
-      name: '产品',
-      code: 'product',
-      items: [{
-         name: 'Highcharts JS',
-         code: 'highcharts'
-      }, {
-         name: 'Highcharts Stock',
-         code: 'stock'
-      }, {
-         name: 'Highcharts Maps',
-         code: 'maps'
-      }, {
-         name: 'Highcharts Gantt',
-         code: 'gantt'
-      },{
-         name: "Highcharts iOS",
-         code: "ios"
-      },{
-         name: 'Highcharts Android',
-         code: 'android'
-      }]
-   }, */{
-      name: '在线演示',
-      code: 'demo',
-      items: [{
-         name: 'Highcharts 演示',
-         code: 'highcharts'
-      }, {
-         name: 'Highcharts Stock 演示',
-         code: 'stock'
-      }, {
-         name: 'Highcharts Maps 演示',
-         code: 'maps'
-      }, {
-         name: 'Highcharts Gantt 演示',
-         code: 'gantt'
-      }]
-   }, {
-      name: '开发者资源',
-      code: 'dev',
-      items: [{
-         name: '使用教程',
-         code: '/docs'
-      }, {
-         name: 'API 文档',
-         code: 'api',
-         url: 'https://api.highcharts.com.cn/'
-      }, {
-         name: '更新日志',
-         code: '/docs/changelog'
-      }, {
-         name: '发展规划',
-         code: '/docs/roadmap'
-      }/*, {
-         name: '技术社区',
-         url: 'https://forum.jianshukeji.com/c/highcharts'
-      }*/]
-   },/* {
-      name: '服务与支持',
-      code: 'support'
-   },*/ {
-      name: '下载试用',
-      code: 'download',
-      className: 'nav-try'
-   }],
-   rightNav: [{
-      name: '关于我们',
-      code: 'about',
-      items: [{
-         name: '关于我们',
-         code: '/about'
-      }, {
-         name: '联系方式',
-         code: '/about#contact'
-      }, {
-         name: '新闻动态',
-         code: '/news'
-      }, {
-         name: '合作伙伴',
-         code: '/about/parter'
-      }]
-   }, {
-      name: '在线商店',
-      code: 'shop',
-      url: ShopDomain
-   }],
-   rightNavOptions: {
-      className: 'navbar-right'
-   }
-};
+import Logo from "./Logo";
+import Navbar from './Navbar';
 
-function Header({ props }) {
+function Header(props) {
 
-   return <header>
-      <nav className="navbar navbar-default">
-         <div className="container-fluid">
-            <div className="navbar-header">
-               <a className="navbar-brand" href="/"><img src="/images/logo.svg" title="HIGHCHARTS" alt="HIGHCHARTS" /></a>
-            </div>
-            <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-               <Drilldown items={options.nav} options={options.rightNavOptions}/>
-            </div>
-         </div>
-      </nav>
-		
-   </header>
+	return <header id="masthead" className="site-header navbar-static-top bg-mudLogo sticky-top" role="banner">
+		<div id="wrapper-navbar">
+			<a className="skip-link sr-only sr-only-focusable" href="#content">Skip to content</a>
+			<nav id="main-nav" aria-label="Main" className="navbar navbar-size navbar-expand-md mudTheme p-0">
+				<Logo />
+				<div id="navbarNavDropdown" className="p-3 p-md-0 collapse navbar-collapse desktop-version">
+					<div id="main-menu">
+						<Navbar />
+					</div>
+					<button aria-label="Open search field" id="searchDesktop" className="btn search-all d-inline-flex d-md-block my-0 mr-2 ml-p p-0 horisontal-menu-item">
+						<svg aria-hidden="true" className="searchIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+							<circle cx="11" cy="11" r="8"></circle>
+							<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+						</svg>
+					</button>
+				</div>
+				<div id="searchfield-container" className="searchbar mx-1">
+					<div className="addsearch-searchfield-container">
+						<form className="addsearch-searchfield" autoComplete="off" action="?" role="search">
+							<div className="search-field-wrapper">
+								<input type="search" placeholder="Search everything" aria-label="Search field" className="pl-2 " />
+							</div>
+						</form>
+					</div>
+				</div>
+				<button aria-label="Hide search field" id="hideSearch" className="btn m-0 mr-1 p-0">
+					<svg id="cross" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+						<line x1="18" y1="6" x2="6" y2="18"></line>
+						<line x1="6" y1="6" x2="18" y2="18"></line>
+					</svg>
+				</button>
+			</nav>
+		</div>
+	</header>
 };
 
 export default Header;

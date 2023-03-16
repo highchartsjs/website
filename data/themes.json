@@ -1,0 +1,22 @@
+[
+   {
+      "name": "Brand Light",
+      "code": "brand-light"
+   },
+   {
+      "name": "Brand Dark",
+      "code": "brand-dark"
+   },
+   {
+      "name": "Drak Unica",
+      "code": "dark-unica"
+   },
+   {
+      "name": "Sand Signika",
+      "code": "sand-signika"
+   },
+   {
+      "name": "Grid Light",
+      "code": "grid-light"
+   }
+]

@@ -60,7 +60,7 @@ addEventListener('fetch', event => {
 	event.respondWith(handleRequest(event))
 });
 
-
+const MaxAge = 30 * 24 * 60 * 60; // 1 month
 async function handleRequest(event) {
 	const request = event.request;
 	const url = new URL(request.url);
@@ -96,9 +96,8 @@ async function handleRequest(event) {
 
 			const headers = new Headers();
 			object.writeHttpMetadata(headers);
-			// response.headers.set('Cache-Control', 'max-age=1500');
 			headers.set('etag', object.httpEtag);
-			headers.set('Cache-Control', 's-maxage=10');
+			headers.set('Cache-Control', `s-maxage=${MaxAge},max-age=${MaxAge}`);
 			response = new Response(object.body, {
 				headers,
 			});

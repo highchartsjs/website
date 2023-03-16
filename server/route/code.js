@@ -8,6 +8,7 @@ const files = require('../../data/files.json');
 router.get('/data.json', (req, res) => {
 	res.status(200).json({
 		version: [
+			'10.3.3',
 			'10.3.2',
 			'10.3.0',
 			'10.2.1',

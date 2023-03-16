@@ -32,3 +32,8 @@ Highcharts ZIP 文件下载接口
 ### /api/samples/[...path]
 
 Highcharts Samples 数据接口，用于 JShare 代码运行。
+
+
+## TODO
+
+rateLimit: https://www.npmjs.com/package/express-rate-limit
