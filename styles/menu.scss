@@ -1,9 +1,9 @@
 @keyframes show {
-	100% {
-	  opacity: 1;
-	  transform: none;
-	}
- }
+   100% {
+      opacity: 1;
+      transform: none;
+   }
+}
 
 .nav {
    list-style: none;
@@ -12,7 +12,7 @@
    &>li {
       border-bottom: 1px solid #000;
       padding: 0.5rem 0;
-		width: 100%;
+      width: 100%;
 
       button {
          width: 100%;
@@ -25,17 +25,24 @@
          padding: 0.5rem 1rem;
          color: #a9a5bf;
 
-         .icon {
-            width: 20px;
-            height: 20px;
-         }
+         // .icon {
+         //    width: 20px;
+         //    height: 20px;
+         // }
 
-         svg {
-            width: 100%;
-            height: 100%;
-            transform: rotate(270deg);
-            color: #888;
-         }
+         // svg {
+         //    width: 100%;
+         //    height: 100%;
+         //    transform: rotate(270deg);
+         //    color: #888;
+         // }
+
+			.menu-icon {
+				width: 24px;
+				transform: rotate(-90deg);
+				color: #888;
+				transition: transform 0.3s;
+			}
 
          &:hover {
             color: #fff;
@@ -46,13 +53,18 @@
          }
       }
 
+		.menu-content {
+			overflow: hidden;
+			transition: height 0.8s;
+		}
+
       ul {
-			// opacity: 0;
-         display: none;
          list-style: none;
          padding: 0;
          background-color: #404058;
          padding: 0.5rem 0;
+			margin: 0;
+        
 
          li a {
             color: #a9a5bf;
@@ -60,6 +72,7 @@
             width: 100%;
             padding: 0.5rem 1.5rem;
             border-bottom: none;
+				outline: none;
 
             &:hover {
                background-color: #48485a;
@@ -86,20 +99,27 @@
          }
       }
 
+
       &.active {
          button {
             color: #fff;
          }
 
-         svg {
-            transform: rotate(0);
-            color: #fff;
-         }
+			.menu-icon {
+				transform: rotate(0);
+			}
 
-         ul {
-            display: block;
-				// animation: show 600ms 100ms cubic-bezier(0.38, 0.97, 0.56, 0.76) forwards;
-         }
+         // svg {
+         //    transform: rotate(0);
+         //    color: #fff;
+         // }
+
+         // ul {
+
+         // 	height: 500px;
+         //    // display: block;
+         // 	// animation: show 600ms 100ms cubic-bezier(0.38, 0.97, 0.56, 0.76) forwards;
+         // }
       }
    }
 
@@ -108,13 +128,14 @@
 .nav.white-theme {
    &>li {
       border-bottom: none;
-		// border-bottom: 1px solid #eee;
+      // border-bottom: 1px solid #eee;
 
       button {
          color: #555;
 
          &:hover {
             color: #333;
+
             svg {
                color: #333;
             }
@@ -122,7 +143,7 @@
       }
 
       ul {
-         background: none;
+         background: #fff;
 
          li a {
             color: #555;

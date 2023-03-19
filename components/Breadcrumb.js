@@ -7,7 +7,7 @@ import navbar from "@data/navbar";
  * @param {*} paths, Path only include one or two element
  * @returns 
  */
-export function Breadcurmb({ paths }) {
+export default function Breadcurmb({ paths }) {
 
 	let items = [],
 		target = navbar;

@@ -1,11 +1,11 @@
 
-
 import PRODUCTS from '@data/products.json';
 
 import ProductService from '@service/ProductService';
 
 import "@styles/autoptimize.css";
-import { Breadcurmb } from '@components/Breadcrumb';
+import Breadcurmb  from '@components/Breadcrumb';
+import Accordion from '@components/Accordion';
 import AddOnBoxes from '@components/AddOnBoxes';
 import AdvantageTable from '@components/AdvantageTable';
 
@@ -33,6 +33,7 @@ export default async function Page(props) {
 	let product = props.params.product;
 	let data = await getData(product);
 	data.code = product;
+	let coreFeature = data['core-features'];
 	return <>
 		<Breadcurmb paths={['products', product]}></Breadcurmb>
 		<div class="product-pages" id="content">
@@ -53,7 +54,7 @@ export default async function Page(props) {
 									}}></span></h1>
 								<p dangerouslySetInnerHTML={{ __html: data.description }}></p>
 								{
-									data.buttons ?
+									data.buttons &&
 										<div class="row">
 											<div class="col-12">
 												<div class="row button-rows">
@@ -63,7 +64,6 @@ export default async function Page(props) {
 												</div>
 											</div>
 										</div>
-										: null
 								}
 
 							</div>
@@ -119,36 +119,36 @@ export default async function Page(props) {
 					</div>
 				</div> */}
 				{
-					!data.demos ? null :
-						<div class="content-fluid bkgMudLogo txtWhite">
-							<div class="container">
-								<div class="row">
-									<div class="col-12 mb-3">
-										<div class="row justify-content-between">
-											<div class="col-12 col-md-9">
-												<h2>{data.title} 热门示例</h2>
-											</div>
-											<div class="col-12 col-md-3 text-left text-md-right mt-0 mt-md-2">
-												<p><a href={"/demo/" + data.code} class="txtWhite">探索所有示例<i style={{ "margin-left": "5px" }} class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
-											</div>
+					data.demos  &&
+					<div class="content-fluid bkgMudLogo txtWhite">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 mb-3">
+									<div class="row justify-content-between">
+										<div class="col-12 col-md-9">
+											<h2>{data.title} 热门示例</h2>
 										</div>
-										<div class="card-deck card-demo">
-											{
-												data.demos.map((demo, i) =>
-													<div class="card txtWhite border-0 mb-sm-1 mb-xl-0" key={"demos" + i}>
-														<iframe scrolling="no" class="card-img-top iframe-img single-post-grid" src={demo.iframe} alt=""></iframe>
-														<div class="card-body p-1"> <a class="h3 txtWhite underline-hover-only" href={demo.link}>{demo.name}</a></div>
-													</div>
-												)
-											}
+										<div class="col-12 col-md-3 text-left text-md-right mt-0 mt-md-2">
+											<p><a href={"/demo/" + data.code} class="txtWhite">探索所有示例<i style={{ "margin-left": "5px" }} class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
 										</div>
+									</div>
+									<div class="card-deck card-demo">
+										{
+											data.demos.map((demo, i) =>
+												<div class="card txtWhite border-0 mb-sm-1 mb-xl-0" key={"demos" + i}>
+													<iframe scrolling="no" class="card-img-top iframe-img single-post-grid" src={demo.iframe} alt=""></iframe>
+													<div class="card-body p-1"> <a class="h3 txtWhite underline-hover-only" href={demo.link}>{demo.name}</a></div>
+												</div>
+											)
+										}
 									</div>
 								</div>
 							</div>
 						</div>
+					</div>
 				}
 
-				{!data.features ? null :
+				{ data.features &&
 					<div class="content-fluid bkgWhite product-features features" id="features">
 						<div class="container">
 							<div class="row">
@@ -188,7 +188,7 @@ export default async function Page(props) {
 						:
 						<>  
 							{
-								!data['core-features'] ? null :
+								coreFeature && 
 									<div class="content-fluid bkgWhite product-features features" id="features">
 										<div class="container">
 											<div class="row">
@@ -201,9 +201,12 @@ export default async function Page(props) {
 													</div>
 												</div>
 												<div class="col-12 col-md-9">
-													<div class="accordion accordion-parent" id="accordion-parent-">
+													<Accordion items={coreFeature} options={{
+														code: 'features'
+													}}></Accordion>
+													{/* <div class="accordion accordion-parent" id="accordion-parent-"> */}
 
-														{
+														{/* {
 															data['core-features'].map((feature, i) =>
 																<div class="card" key={'core-feature' + i}>
 																	<div class="card-header p-0">
@@ -224,9 +227,9 @@ export default async function Page(props) {
 																	</div>
 																</div>
 															)
-														}
+														} */}
 
-													</div>
+													{/* </div> */}
 												</div>
 											</div>
 										</div>
@@ -261,9 +264,6 @@ export default async function Page(props) {
 							</div>
 						</>
 				}
-
-
-
 
 				<AddOnBoxes current={product} />
 			</main>

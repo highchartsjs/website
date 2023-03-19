@@ -22004,9 +22004,7 @@ ul.footerSocialsList li {
 	color: #a3edba
 }
 
-#main-nav .dropdown-toggle[aria-expanded=true] svg {
-	transform: rotate(180deg)
-}
+
 
 #main-nav ul {
 	list-style: none;

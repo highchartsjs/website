@@ -1,51 +1,97 @@
 'use client'
-import { useState } from "react";
-
-// import { ChevronDownIcon } from '@components/icons';
+import { useState, useRef, useEffect } from "react";
+import Icon from '@components/icons';
 
 
 function getLink(options, item, category) {
-	if(options.linkPatter) {
+	if (options.linkPatter) {
 		return options.linkPatter.replace('${category}', category.code).replace('${code}', item.code);
 	}
 	return options.linkPrefix + item[options.key];
 };
 
+
+const MenuItem = function ({ category, states, current, options, callback }) {
+
+
+	const name = options.name || 'name';
+	const key = options.key;
+	let isCurrent = states.currentParent === category[key];
+	let isInitalActive = isCurrent && states.isInitalActive;
+
+	const contentRef = useRef();
+
+	useEffect(() => {
+		if (isInitalActive) {
+			contentRef.current.parentNode.style.height = contentRef.current.scrollHeight + 'px';
+		}
+	}, [isInitalActive]);
+
+	return <li
+		className={isCurrent ? 'active' : null}
+		key={category[key]}
+		layout
+		onClick={() => {
+			callback(category[key])
+		}}
+	>
+		<button className="sidebar-category">
+			<span>{category[name]}</span>
+			<span className="menu-icon">
+				<Icon />
+			</span>
+		</button>
+		<div className="menu-content" style={
+			isCurrent ? (isInitalActive ? undefined : {
+				height: contentRef.current.scrollHeight + 'px'
+			}) : { height: '0px' }
+		}>
+			<ul ref={contentRef}>
+				{
+					category.children.map(d =>
+						<li className={d[key] === current[key] ? 'active' : null} key={d[key]}>
+							<a href={getLink(options, d, category)}>{d[name]}</a>
+						</li>
+					)
+				}
+			</ul>
+		</div>
+	</li>
+};
+
+
+
 const Menu = function ({ data, current, options }) {
 
 	const freeToggle = options.freeToggle;
-	const name = options.name || 'name';
-	const key = options.key;
+
 	// const currentParent = current.parent
 
-	const [currentParent, setCurrentParent] = useState(current.parent);
+	// let isInitalActive = current.parent !== undefined;
+
+	// const [currentParent, setCurrentParent] = useState(current.parent);
+
+	const [states, setStates] = useState({
+		isInitalActive: current.parent !== undefined,
+		currentParent: current.parent
+	});
+
+	const setCurrentParent = function (parent) {
+		setStates({
+			isInitalActive: false,
+			currentParent: parent
+		});
+	}
 
 	return <ul className={"nav nav-sidebar" + (options.className || '')}>
 		{
 			data.map(category => {
-				let isCurrent = currentParent === category[key];
-				return <li
-					className={isCurrent ? 'active' : null}
-					key={category[key]}
-					onClick={() => setCurrentParent(category[key])}
-				>
-					<button className="sidebar-category">
-						<span>{category[name]}</span>
-						<icon className="toggle"></icon>
-					</button>
-					<ul style={
-						isCurrent ? null : {display: 'none'}
-					}>
-						{
-							category.children.map(d =>
-								<li className={d[key] === current[key] ? 'active' : null} key={d[key]}>
-									<a href={getLink(options, d, category)}>{d[name]}</a>
-									{/* <a href={options.link ? options.link(d, category) : (options.linkPrefix + d[key])}>{d[name]}</a> */}
-								</li>
-							)
-						}
-					</ul>
-				</li>
+				return <MenuItem
+					category={category}
+					states={states}
+					current={current}
+					options={options}
+					callback={setCurrentParent}></MenuItem>
 			}
 			)
 		}

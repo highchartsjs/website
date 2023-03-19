@@ -7163,6 +7163,8 @@ ul.inlineList li {
 	border-top: 1px solid #78758c
 }
 
+
+
 .product-pages .add-on {
 	font-style: normal;
 	font-weight: 400;
@@ -7453,6 +7455,14 @@ iframe.iframe-img {
 	position: static
 }
 
+.dropdown .menu-icon {
+	 transition: transform 0.3s;
+	 display: inline-block;
+}
+.dropdown.show .menu-icon {
+	transform: rotate(180deg);
+}
+
 #main-nav .navbar-brand-small {
 	display: none
 }
@@ -7474,9 +7484,6 @@ iframe.iframe-img {
 	color: #a3edba
 }
 
-#main-nav .dropdown-toggle[aria-expanded=true] svg {
-	transform: rotate(180deg)
-}
 
 #main-nav ul {
 	list-style: none;
@@ -7628,6 +7635,18 @@ iframe.iframe-img {
 .list-menu-level-2 .menu-level-2 {
 	width: 350px
 }
+
+.menu-item-icon {
+	display: inline-block;
+	transform: rotate(-90deg);
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.active>.menu-item-icon{
+	opacity: 1;
+}
+
 
 @media (min-width: 1450px) {
 	.list-menu-level-2 {

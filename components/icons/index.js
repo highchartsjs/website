@@ -1,11 +1,30 @@
-export * from './ArrowLeftIcon';
-export * from './ArrowNarrowRightIcon';
-export * from './ArrowRightIcon';
-export * from './ChevronDownIcon';
-export * from './ClipboardIcon';
-export * from './ClipboardCheckIcon';
-export * from './CloseIcon';
-export * from './GitHubIcon';
-export * from './LinkIcon';
-export * from './MenuIcon';
-export * from './PencilIcon';
+export * from './ArrowLeft';
+export * from './ArrowNarrowRight';
+export * from './ArrowRight';
+export * from './ChevronDown';
+export * from './Clipboard';
+export * from './ClipboardCheck';
+export * from './Close';
+export * from './GitHub';
+export * from './Link';
+export * from './Menu';
+export * from './Pencil';
+
+const icons = {
+	'narrow': `<polyline points="6 9 12 15 18 9" />`,
+	'arrow': `<line x1="5" y1="12" x2="19" y2="12"></line>
+	<polyline points="12 5 19 12 12 19"></polyline>`
+};
+
+export default function Icon({ name = 'narrow', size = 24, lineWidth = 2 }) {
+	return  <svg xmlns="http://www.w3.org/2000/svg" 
+		width={size} 
+		height={size} 
+		viewBox={[0, 0, size, size].join(' ')}
+		fill="none" 
+		stroke="currentColor"
+		strokeWidth={lineWidth}
+		strokeLinecap="round" 
+		strokeLinejoin="round" dangerouslySetInnerHTML={{__html: icons[name]}}>
+	</svg>
+}

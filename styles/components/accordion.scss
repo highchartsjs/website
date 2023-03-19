@@ -1,0 +1,22 @@
+.accordion-icon {
+   transform: rotate(-90deg);
+   transition: transform 0.3s;
+}
+
+
+
+.accordion-content {
+   transition: height 0.5s;
+	height: 0;
+}
+
+
+
+.accordion-item.active {
+	.accordion-icon {
+		transform: rotate(0deg);
+	}
+	.accordion-content {
+		height: unset;
+	}
+}

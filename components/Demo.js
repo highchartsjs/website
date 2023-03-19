@@ -11,6 +11,7 @@ import ThemeSelector from '@components/ThemeSelector'
 
 import "@styles/css.css";
 import "@styles/demo.scss";
+import '@styles/menu.scss';
 
 function Demo({ props }) {
 
