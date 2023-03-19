@@ -4,7 +4,6 @@ import { useState } from "react";
 
 import navbar from "@data/navbar";
 
-import { motion } from 'framer-motion';
 import Icon from "./icons";
 
 /**
