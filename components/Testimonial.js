@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+import Icon from "@components/icons";
+
 
 const data = [{
 	title: '可能你需要的最好的和唯一的图表库',
@@ -59,7 +61,7 @@ function Testimonial(props) {
 					<div className="card p-1 p-sm-2">
 						<div className="text-center">
 							<img className="medal" alt="Rated best charting library summer 2022 on G2"
-								src="https://wp-assets.highcharts.com/svg/businessIntelligence_leader.svg" />
+								src="/svg/businessIntelligence_leader.svg" />
 						</div>
 						<div className="card-body pt-1">
 							<h3 className="card-title m-0 px-0 px-sm-2">{d.title}</h3>
@@ -76,10 +78,14 @@ function Testimonial(props) {
 			})}
 		</div>
 		<a onClick={() => goto()} className="carousel-control-prev" aria-label="Previous review" href="javascript: void(0)" role="button" data-slide="prev">
-			<i className="arrow-icon fas fa-lg fa-arrow-left" aria-hidden="true"></i> <span className="sr-only">Previous</span>
+			{/* <i className="arrow-icon fas fa-lg fa-arrow-left" aria-hidden="true"></i> */}
+			<span style={{width: '24px', color: '#333'}}><Icon name="arrow-left" ></Icon></span>
+			<span className="sr-only">Previous</span>
 		</a>
 		<a onClick={() => goto(true)} className="carousel-control-next" aria-label="Next review" href="javascript: void(0)" role="button" data-slide="next">
-			<i className="arrow-icon fas fa-lg fa-arrow-right" aria-hidden="true"></i> <span className="sr-only">Next</span>
+			{/* <i className="arrow-icon fas fa-lg fa-arrow-right" aria-hidden="true"></i>  */}
+			<span style={{width: '24px', color: '#333'}}><Icon name="arrow"></Icon></span>
+			<span className="sr-only">Next</span>
 		</a>
 		<ol className="carousel-indicators">
 			{data.map((d, i) => {

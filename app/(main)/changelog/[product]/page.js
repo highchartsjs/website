@@ -4,6 +4,12 @@ import DocService from '@service/DocService';
 
 import "@styles/autoptimize.css";
 
+
+import getTitle from '@components/Title';
+import Breadcrumb from '@components/Breadcrumb';
+
+
+
 export async function generateStaticParams() {
 
 	let paths = [{
@@ -21,15 +27,25 @@ export async function generateStaticParams() {
 	return paths;
 }
 
+
 export async function getData(product) {
 	return await DocService.getChangelog(product);
 };
+
+
+export function generateMetadata({ params }) {
+	return getTitle(PRODUCTS[params.product].name + ' 更新日志')
+}
+
 
 export default async function Page(props) {
 	let data = await getData(props.params.product);
 	let productKeys = Object.keys(PRODUCTS);
 
+
+
 	return <section id="changelog">
+		<Breadcrumb paths="changelog"></Breadcrumb>
 		<div className="container">
 			<div className="section-title text-center">
 				<h1>更新日志</h1>

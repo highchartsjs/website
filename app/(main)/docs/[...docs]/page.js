@@ -11,6 +11,8 @@ import Head from "@components/Head";
 import Menu from '@components/Menu';
 import DocNav from '@components/DocNav';
 
+import getTitle from '@components/Title';
+
 import '@styles/menu.scss';
 import "@styles/docs.scss";
 
@@ -31,6 +33,17 @@ export async function generateStaticParams() {
 	return paths;
 }
 
+export async function generateMetadata({ params }) {
+
+	return getTitle(	await DocService.getName(params.docs));
+	// let demoParams = getDemoParams(params.demo);
+
+	// if (demoParams.demo) {
+	// 	return getTitle(await DemoService.getDemoName(demoParams.product, demoParams.demo))
+	// } else {
+	// 	return getTitle(PRODUCTS[demoParams.product].name + ' 示例')
+	// }
+}
 
 export async function getData(paths) {
 	return await DocService.getDoc(paths);

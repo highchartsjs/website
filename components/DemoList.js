@@ -5,7 +5,6 @@
 import Link from 'next/link';
 import { useEffect } from 'react';
 
-import THEMES from '@data/themes.json';
 import PRODUCTS from '@data/products.json';
 
 import ThemeSelector from '@components/ThemeSelector'
@@ -59,7 +58,7 @@ function DemoList({ props }) {
 		<div id="header" className="row d-none d-sm-flex m-0">
 			<div className="container">
 				<div className="page-header-container">
-					<h1 className="p-0 mt-2">{productName} Demos</h1>
+					<h1 className="p-0 mt-2">{productName} 示例</h1>
 					<ThemeSelector theme={theme} linkPre={demoUrl}/>
 				</div>
 			</div>

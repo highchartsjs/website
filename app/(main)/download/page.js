@@ -1,7 +1,12 @@
 
 import "@styles/autoptimize.css";
+import getTitle from '@components/Title';
+import Breadcrumb  from '@components/Breadcrumb';
+export const metadata = getTitle('下载试用');
+
 function Download() {
 	return <div id="full-width-page-wrapper">
+		<Breadcrumb paths='download'></Breadcrumb>
 		<div id="content">
 			<main className="site-main" id="main" role="main">
 				<div className="content-fluid" id="try-before-buy">

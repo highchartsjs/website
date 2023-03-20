@@ -130,7 +130,6 @@ const Footer = function (props) {
 								{
 									menu.items.map(item =>
 										<FooterLink item={item} key={item.code}></FooterLink>
-										// <li className="footer-link" key={item.code}><a href={item.link || ('/' + item.code)}>{item.title}</a></li>
 									)
 								}
 							</ul>
@@ -145,12 +144,7 @@ const Footer = function (props) {
 				<div className="col py-1 pl-0 pb-3 text-right">
 					<h2 className="h2-text-hidden">Social</h2>
 					<ul className="footerSocialsList footerSocials">
-						{/* <li><a className="socials" href="https://twitter.com/Highcharts" aria-label="Highcharts Twitter"><i className="fa fa-twitter txtWhite" aria-hidden="true"></i></a></li> */}
-						{/* <li><a className="socials" href="https://www.linkedin.com/company/highsoft/" aria-label="Highcharts Linkedin"><i className="fa fa-linkedin txtWhite" aria-hidden="true"></i></a></li> */}
-						{/* <li><a className="socials" href="https://www.facebook.com/Highcharts" aria-label="Highcharts Facebook"><i className="fa fa-facebook txtWhite" aria-hidden="true"></i></a></li> */}
 						<li><a className="socials" href="https://github.com/highcharts/highcharts" aria-label="Highcharts Github"><i className="fa fa-github txtWhite" aria-hidden="true"></i></a></li>
-						{/* <li><a className="socials" href="https://www.youtube.com/channel/UCzxXofPTQ0DoT7uIy3Fxw7A" aria-label="Learn more about us on youtube"><i className="fa fa-youtube txtWhite" aria-hidden="true"></i></a></li> */}
-						{/* <li><a className="socials" href="https://www.instagram.com/highcharts" aria-label="Highcharts Instagram"><i className="fa fa-instagram txtWhite" aria-hidden="true"></i></a></li> */}
 						<li><a className="socials" href="https://stackoverflow.com/questions/tagged/highcharts" aria-label="Highcharts Stack Overflow"><i className="fa fa-stack-overflow txtWhite" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
@@ -160,12 +154,7 @@ const Footer = function (props) {
 					<h2 className="h2-text-hidden">Social</h2>
 					<p className="footerSocials text-center"></p>
 					<ul className="footerSocialsList">
-						{/* <li><a className="socials" href="https://twitter.com/Highcharts" aria-label="Highcharts Twitter"><i className="fa fa-twitter txtWhite" aria-hidden="true"></i></a></li> */}
-						{/* <li><a className="socials" href="https://www.linkedin.com/company/highsoft/" aria-label="Highcharts Linkedin"><i className="fa fa-linkedin txtWhite" aria-hidden="true"></i></a></li> */}
-						{/* <li><a className="socials" href="https://www.facebook.com/Highcharts" aria-label="Highcharts Facebook"><i className="fa fa-facebook txtWhite" aria-hidden="true"></i></a></li> */}
 						<li><a className="socials" href="https://github.com/highcharts/highcharts" aria-label="Highcharts Github"><i className="fa fa-github txtWhite" aria-hidden="true"></i></a></li>
-						{/* <li><a className="socials" href="https://www.youtube.com/channel/UCzxXofPTQ0DoT7uIy3Fxw7A" aria-label="Learn more about us on youtube"><i className="fa fa-youtube txtWhite" aria-hidden="true"></i></a></li> */}
-						{/* <li><a className="socials" href="https://www.instagram.com/highcharts" aria-label="Highcharts Instagram"><i className="fa fa-instagram txtWhite" aria-hidden="true"></i></a></li> */}
 						<li><a className="socials" href="https://stackoverflow.com/questions/tagged/highcharts" aria-label="Highcharts Stack Overflow"><i className="fa fa-stack-overflow txtWhite" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>

@@ -230,12 +230,29 @@ ${result.script}
 		return result;
 	},
 
-	getJSON: async(product, code) => {
+	getJSON: async (product, code, theme) => {
 		let filename = path.join(process.cwd(), 'data/samples/' + product) + '/demo/' + code + '.json';
-		console.log(filename)
-		if(FS.existsSync(filename)) {
-			return JSON.parse(await FS.readFile(filename));
-		}	
+		if (FS.existsSync(filename)) {
+			let result = JSON.parse(await FS.readFile(filename));
+
+			if (theme) {
+				result.scripts.push('https://' + CDNDomain + HighchartsVersion + '/themes/' + theme + '.js');
+				result.npm = DemoService.getNPMImport(result.scripts);
+			}
+			return result;
+		}
+		return null;
+	},
+
+	getDemoName: async(product, demoCode) => {
+		let result = JSON.parse(await fs.readFile(path.join(process.cwd(), './data/demos/') + product + '.json'));
+		for(let i =0; i< result.length; i++) {
+			for(let j = 0; j < result[i].children.length; j++) {
+				if(result[i].children[j].code === demoCode) {
+					return result[i].children[j].name;
+				}
+			}
+		}
 		return null;
 	},
 
@@ -266,18 +283,18 @@ ${result.script}
 				}
 
 			} else if (j === result[i].children.length - 1) {
-				if(i === result.length -1) {
+				if (i === result.length - 1) {
 					curren.next = null;
 				} else {
-					group = result[i+1].children;
+					group = result[i + 1].children;
 					curren.next = group[0].code;
 				}
 			}
-			if(curren.pre === undefined) {
-				curren.pre = result[i].children[j-1].code;
+			if (curren.pre === undefined) {
+				curren.pre = result[i].children[j - 1].code;
 			}
-			if(curren.next === undefined) {
-				curren.next = result[i].children[j+1].code;
+			if (curren.next === undefined) {
+				curren.next = result[i].children[j + 1].code;
 			}
 		};
 
@@ -290,8 +307,8 @@ ${result.script}
 					if (parent.children[j].code === currentDemo) {
 						current = parent.children[j];
 						current.parent = parent.code;
-						current.data = await DemoService.getJSON(product, parent.children[j].code)
-						
+						current.data = await DemoService.getJSON(product, parent.children[j].code, theme)
+
 						// await DemoService.getDetail(
 						// 	path.join(HighchartsPATH, './samples/', product, '/demo/', parent.children[j].code),
 						// 	theme, needIEScripts);

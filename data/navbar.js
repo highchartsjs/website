@@ -1,4 +1,6 @@
-export default  [{
+import AddOns, {integrations} from './addons';
+
+const navbar = [{
 	title: '产品',
 	code: 'products',
 	isMenu: true,
@@ -92,86 +94,121 @@ export default  [{
 			link: 'https://github.com/highcharts/highcharts-editor'
 		}]
 	}, {
-		title: 'Highcharts Advantage',
-		code: 'advantage',
+		title: '高级技术支持服务',
+		code: 'highcharts-advantage',
 		menus: [{
-			title: '功能特性',
+			title: '服务详情',
 			link: '/products/highcharts-advantage'
 		}]
-	},{
-		title: 'Integrations',
+	}, {
+		title: '扩展及集成',
 		code: 'integrations',
-		menus: [{
-			title: 'Wrappers',
-			link: '/products/wrappers'
-		},{
-			title: 'Add-ons',
-			link: '/products/add-ons'
-		},{
-			title: 'Frameworks',
-			link: '/products/frameworks'
-		},{
-			title: 'Mobile',
-			link: '/products/mobile'
-		}]
+		menus: integrations
 	}]
 }, {
-	title: '在线例子',
-	code: 'demos',
+	title: '在线示例',
+	code: 'demo',
 	items: [{
 		title: 'Highcharts JS 示例',
-		link: '/demo'
+		code: ''
 	}, {
 		title: 'Highcharts Stock 示例',
-		link: '/demo/stock'
+		code: 'stock'
 	}, {
 		title: 'Highcharts Maps 示例',
-		link: '/demo/maps'
+		code: 'maps'
 	}, {
 		title: 'Highcharts Gantt 示例',
-		link: '/demo/gantt'
+		code: 'gantt'
 	}, {
 		title: 'Accessibility 示例',
+		code: 'accessibility',
 		link: '/accessibility/#exploreFeatures'
-	}, {
+	} /*, {
 		title: '客户案例',
-		link: '/blog/posts/use-cases/'
-	}]
+		code: '/blog/posts/use-cases/'
+	}*/]
 }, {
 	title: '开发者资源',
 	code: 'developer',
+	ignorePrefix: true,
 	items: [{
 		title: "使用教程",
-		link: '/docs'
+		code: 'docs'
 	}, {
 		title: 'API 文档',
 		link: 'https://api.highcharts.com/highcharts'
 	}, {
 		title: '无障碍访问',
-		link: '/accessibility'
-	}, {
+		code: 'accessibility'
+	}, /*{
 		title: '图表选择器',
 		link: 'chartchooser'
-	}, {
+	}, */{
 		title: '更新日志',
-		link: '/changelog'
+		code: 'changelog'
 	}, {
 		title: "发展规划",
-		link: '/roadmap'
+		code: 'roadmap'
 	}]
 }, {
 	title: '服务与支持',
 	code: 'support'
 }, {
 	title: '下载试用',
-	code: 'try',
 	type: 'button',
-	link: '/download',
+	code: 'download',
 	class: 'primary'
 }, {
 	title: '购买授权',
-	code: 'buy',
+	code: 'shop',
 	link: 'https://shop.highsoft.com',
 	type: 'button',
 	class: 'secondary'
 }];
+
+
+let navbarMap = {};
+
+
+function addToMap(nav, prefix = '') {
+	if (!nav.link.startsWith('http')) {
+		navbarMap[prefix + nav.code] = {
+			link: nav.link,
+			title: nav.title
+		};
+	}
+};
+
+// update Link 
+navbar.forEach(nav => {
+	if (nav.items) {
+		nav.items.forEach(item => {
+
+			let prefix = '';
+			if (!nav.ignorePrefix) {
+				prefix = nav.code + '/';
+			}
+
+			if (!item.link) {
+				item.link = '/' + prefix + item.code;
+			}
+			addToMap(item, prefix);
+		});
+	}
+	nav.link = '/' + nav.code;
+
+	addToMap(nav);
+});
+
+
+AddOns.forEach(add => {
+	add.link = '/products/' + add.code;
+	addToMap(add, 'products/');
+});
+
+
+
+export { navbarMap };
+
+export default navbar;

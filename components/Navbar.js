@@ -14,7 +14,7 @@ import Icon from "./icons";
 function SimpleNav(props) {
 	let nav = props.nav;
 	return <li className="menu-item-level-1" key={nav.code}>
-		<a href={nav.link || ('/' + nav.code)}
+		<a href={nav.link}
 			className={nav.type === 'button' ?
 				`btn btn-${nav.class} mr-1 btn-small horisontal-menu-item text-uppercase` :
 				"horisontal-menu-item"}

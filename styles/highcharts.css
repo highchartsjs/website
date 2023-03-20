@@ -6684,7 +6684,7 @@ p {
 }
 
 .about-bottom {
-	background-image: url("https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2021/10/07141719/bottom-image.jpg");
+	background-image: url("/www-highcharts-com/blog/wp-content/uploads/2021/10/07141719/bottom-image.jpg");
 	background-repeat: no-repeat;
 	height: 500px;
 	background-size: cover
@@ -8523,7 +8523,7 @@ ul.footerSocialsList li {
 
 #products-advantage-container .client-logos,#products-homepage-container .client-logos {
 	margin-left: auto;
-	background-image: url(https://wp-assets.highcharts.com/svg/worldmap.svg);
+	background-image: url(/svg/worldmap.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: center -60px
@@ -8539,7 +8539,7 @@ ul.footerSocialsList li {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url(https://wp-assets.highcharts.com/svg/circle.svg);
+	background-image: url(/svg/circle.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center center;
@@ -8561,7 +8561,7 @@ ul.footerSocialsList li {
 
 @media screen and (min-width: 992px) {
 	#products-advantage-container .product-bg,#products-homepage-container .product-bg {
-		 background-image:url(https://wp-assets.highcharts.com/svg/dash-lines.svg)
+		 background-image:url(/svg/dash-lines.svg)
 	}
 }
 
@@ -9910,7 +9910,7 @@ h2.non-blog-post {
 	}
 
 	#products-advantage-container .product-bg {
-		 background-image: url(https://wp-assets.highcharts.com/svg/ovals.svg);
+		 background-image: url(/svg/ovals.svg);
 		 height: 1200px;
 		 background-position: center 30px
 	}

@@ -64,13 +64,7 @@ const MenuItem = function ({ category, states, current, options, callback }) {
 const Menu = function ({ data, current, options }) {
 
 	const freeToggle = options.freeToggle;
-
-	// const currentParent = current.parent
-
-	// let isInitalActive = current.parent !== undefined;
-
-	// const [currentParent, setCurrentParent] = useState(current.parent);
-
+	
 	const [states, setStates] = useState({
 		isInitalActive: current.parent !== undefined,
 		currentParent: current.parent
@@ -79,7 +73,7 @@ const Menu = function ({ data, current, options }) {
 	const setCurrentParent = function (parent) {
 		setStates({
 			isInitalActive: false,
-			currentParent: parent
+			currentParent: parent === states.currentParent ? null : parent
 		});
 	}
 

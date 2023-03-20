@@ -70,16 +70,30 @@ const DocService = {
 			}
 		}
 
-		if(!result.next) {
+		if (!result.next) {
 			delete result.next
 		}
 	},
 
 	getChangelog: async function (product) {
-		return await FS.readFile(DocFileSource  + 'changelog/' + product + '.html');
-		// return await FS.readFile(HighchartsPATH + '/changelog/' + product + '.html');
+		return await FS.readFile(DocFileSource + 'changelog/' + product + '.html');
 	},
 
+	getName: async function (paths) {
+		let target = sidebar.docs;
+		for (let i = 0; i < paths.length; i++) {
+			for (let j = 0; j < target.length; j++) {
+				if (paths[i] === target[j].code) {
+					if (i === paths.length - 1) {
+						return target[j].name;
+					}
+					target = target[j].children;
+					break;
+				}
+			}
+		}
+		return '';
+	},
 
 	getDoc: async function (paths) {
 
@@ -102,7 +116,7 @@ const DocService = {
 		DocService.getDocNav(category, doc, result);
 
 
-		result.content = await fs.readFile(DocFileSource + 'md/' +  file + '.md');
+		result.content = await fs.readFile(DocFileSource + 'md/' + file + '.md');
 
 		return result;
 	}

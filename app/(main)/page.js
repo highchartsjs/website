@@ -1,5 +1,8 @@
 
 import Testimonial from '@components/Testimonial';
+import getTitle from '@components/Title';
+
+export const metadata = getTitle('Interactive javascript charts library');
 
 const HOME = function (props) {
 	return <section id="primary-fullwidth" className="content-area">
@@ -35,7 +38,10 @@ const HOME = function (props) {
 						</div>
 					</div>
 					<div className="container-page-animation" role="img" aria-label="Illustrative interactive stock chart">
-						<iframe className="page-animation iframe-animation heroChart mt-2" id="heroChart" scrolling="no" tabindex="0" title="Interactive Highcharts Demo" src="https://www.highcharts.com/samples/nonav/highcharts/website/homepage-2021"></iframe>
+						<iframe className="page-animation iframe-animation heroChart mt-2"
+							id="heroChart" scrolling="no" tabindex="0" title="Interactive Highcharts Demo"
+							src="/homepage-2021.html">
+						</iframe>
 					</div>
 				</div>
 				<div className="container-fluid bkgWhite" id="products-homepage-container">
@@ -43,13 +49,13 @@ const HOME = function (props) {
 						<div className="row mx-2 mx-md-2 mx-lg-5">
 							<h2 className="col-12 text-center">您唯一需要的图表库</h2>
 							<p className="col-12 px-1 px-md-3 text-center"> Highcharts 系列软件库包含了创建可靠和安全的数据可视化所需的所有工具。构建于 JavaScript 和 Typescript 之上，我们所有的图表库都能与任何后端数据库或服务端技术栈配合使用。
-            我们为流行的编程语言（.Net、PHP、Python、R、Java），移动开发平台（<a href="/products/ios">iOS</a> 和 <a href="/products/android">Android</a>），以及流行的前端框架（Angular、Vue、React）等提供了对应的扩展包或开发支持。</p>
+								我们为流行的编程语言（.Net、PHP、Python、R、Java），移动开发平台（<a href="/products/ios">iOS</a> 和 <a href="/products/android">Android</a>），以及流行的前端框架（Angular、Vue、React）等提供了对应的扩展包或开发支持。</p>
 						</div>
 						<div className="product-bg container-fluid mx-0">
 							<div className="row">
 								<div className="col-12">
 									<div className="logo p-1 p-md-2 mt-2">
-										<img alt="" className="d-block mb-0" src="https://wp-assets.highcharts.com/svg/logo_mark.svg" />
+										<img alt="" className="d-block mb-0" src="/svg/logo_mark.svg" />
 										<h3 className="d-block text-light m-1 productHPTitleDark"><a href="/products/highcharts" className="txtWhite">Highcharts JS</a></h3>
 										<div className="px-2 mb-1">
 											<p className="logo-text-width p-0">包含所有基础图表：<br />线图、面积图、柱形图、关系图、仪表图、高级图形等其他您所需要的基础图表</p>
@@ -61,7 +67,7 @@ const HOME = function (props) {
 								<div className="col-12 col-lg-4">
 									<div className="card first shadow">
 										<div className="text-center pb-1 pb-md-0">
-											<img alt="" src="https://wp-assets.highcharts.com/svg/maps-dark.svg" />
+											<img alt="" src="/svg/maps-dark.svg" />
 										</div>
 										<div className="card-body text-center pb-2">
 											<h3 className="card-title mt-0 productHPTitle"><span className="card-subtitle mb-1 newline txt-uppercase">Combine
@@ -72,7 +78,7 @@ const HOME = function (props) {
 								</div>
 								<div className="col-12 col-lg-4">
 									<div className="card shadow second">
-										<div className="text-center pb-1 pb-md-0"><img alt="" src="https://wp-assets.highcharts.com/svg/stock-dark.svg" /></div>
+										<div className="text-center pb-1 pb-md-0"><img alt="" src="/svg/stock-dark.svg" /></div>
 										<div className="card-body text-center pb-2">
 											<h3 className="card-title mt-0 productHPTitle"><span className="card-subtitle mb-1 newline txt-uppercase">Combine With</span> <a href="/products/stock">Highcharts Stock</a></h3>
 											<p className="card-text">交互式股票及时间序列数据图表。</p>
@@ -81,7 +87,7 @@ const HOME = function (props) {
 								</div>
 								<div className="col-12 col-lg-4">
 									<div className="card shadow">
-										<div className="text-center pb-1 pb-md-0"><img alt="" src="https://wp-assets.highcharts.com/svg/gantt-dark.svg" /></div>
+										<div className="text-center pb-1 pb-md-0"><img alt="" src="/svg/gantt-dark.svg" /></div>
 										<div className="card-body text-center pb-2 ">
 											<h3 className="card-title mt-0 productHPTitle"><span className="card-subtitle mb-1 newline txt-uppercase">Combine With</span> <a href="/products/gantt">Highcharts Gantt</a></h3>
 											<p className="card-text">交互性甘特图可视化</p>
@@ -93,12 +99,12 @@ const HOME = function (props) {
 								<div className="col-12 col-lg-4 offset-lg-4">
 									<div className="card shadow">
 										<div className="text-center pb-1 pb-md-0">
-											<img alt="" src="https://wp-assets.highcharts.com/svg/support-dark.svg" />
+											<img alt="" src="/svg/support-dark.svg" />
 										</div>
 										<div className="card-body text-center pb-3">
 											<h3 className="card-title mt-0 row productHPTitle"> <span className="col-12 order-2">
 												<a href="/products/highcharts-advantage/">
-											高级技术支持服务</a></span> <span className="col-12 card-subtitle newline order-1">版本更新及技术支持服务</span></h3>
+													高级技术支持服务</a></span> <span className="col-12 card-subtitle newline order-1">版本更新及技术支持服务</span></h3>
 											<p className="card-text">一对一的技术支持服务及新版本更新服务。</p>
 										</div>
 									</div>
@@ -120,7 +126,8 @@ const HOME = function (props) {
 							<div className="row">
 								<div className="client-logos col-12">
 									<div className="text-center">
-										<img alt="Company logos: BBC, Samsung, Sony, Thomson Reuters, American Express, Twitter, HSPC, VISA, Mastercard" className="client-logos-img" src="https://wp-assets.highcharts.com/svg/client-logos-homepage.svg" />
+										<img alt="Company logos: BBC, Samsung, Sony, Thomson Reuters, American Express, Twitter, HSPC, VISA, Mastercard"
+											className="client-logos-img" src="/svg/client-logos-homepage.svg" />
 									</div>
 									<Testimonial />
 								</div>
@@ -128,25 +135,25 @@ const HOME = function (props) {
 						</div>
 					</div>
 				</div>
-				<div class="container-fluid"><div class="bkgWhite">
-					<img src="https://wp-assets.highcharts.com/svg/lighthouse-footer.svg" class="w-100 negative-margin-bottom" alt="" />
+				<div className="container-fluid"><div className="bkgWhite">
+					<img src="/svg/lighthouse-footer.svg" className="w-100 negative-margin-bottom" alt="" />
 				</div>
 				</div>
-				<div class="container-fluid bkgDarkestGray">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-md-6">
-								<h2 class="txtWhite">How it All Started</h2>
-								<p class="txtWhite">It all started with a snowy mountain, measuring cane, a passion for
+				<div className="container-fluid bkgDarkestGray">
+					<div className="container">
+						<div className="row">
+							<div className="col-12 col-md-6">
+								<h2 className="txtWhite">How it All Started</h2>
+								<p className="txtWhite">It all started with a snowy mountain, measuring cane, a passion for
 									geology, and the urge to help the locals. Now, Highcharts is solving charting problems
 									for developers all around the world.</p>
-								<p><a href="/about" class="btn btn-primary mt-1">Our Story</a></p>
+								<p><a href="/about" className="btn btn-primary mt-1">Our Story</a></p>
 							</div>
-							<div class="col-12 col-md-6 mt-0 mt-md-2 txtWhite">
+							<div className="col-12 col-md-6 mt-0 mt-md-2 txtWhite">
 								<button data-title="Our Story" data-url="https://player.vimeo.com/video/643496165"
-									type="button" class="button-link-modal p-0 border-0" data-toggle="modal" data-target="#modalVideo-0"
+									type="button" className="button-link-modal p-0 border-0" data-toggle="modal" data-target="#modalVideo-0"
 									style={{ 'background-color': 'inherit' }}>
-									<img class="" alt="Vimeo video: Our Story" src="https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2021/11/04114350/homepage-video-thumb.png" />
+									<img className="" alt="Vimeo video: Our Story" src="/uploads/homepage-video-thumb.png" />
 								</button>
 							</div>
 						</div>
@@ -154,7 +161,7 @@ const HOME = function (props) {
 				</div>
 			</main>
 		</div >
-	</section >
+	</section>
 };
 
 export default HOME;

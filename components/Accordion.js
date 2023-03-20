@@ -7,7 +7,6 @@ import "@styles/components/accordion.scss";
 
 const AccordionItem = function ({ states, item, index, onClick, key }) {
 
-
 	let isActive = states.activeIndex === index;
 	let isInitalActive = isActive && states.isInitalActive;
 	const contentRef = useRef();
@@ -30,7 +29,7 @@ const AccordionItem = function ({ states, item, index, onClick, key }) {
 						aria-expanded={isActive}
 					>
 						<span className='accordion-icon'>
-							<Icon name="narrow"></Icon>
+							<Icon name="triangle" fill="#000" lineWidth="0"></Icon>
 						</span>
 						{item.title}
 					</button>
@@ -55,7 +54,7 @@ const Accordion = ({ items, options }) => {
 	const onTitleClick = (index) => {
 		setStates({
 			isInitalActive: false,
-			activeIndex: index === setStates.activeIndex ? null : index
+			activeIndex: index === states.activeIndex ? null : index
 		});
 	};
 

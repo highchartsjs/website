@@ -6,6 +6,46 @@ import Demo from '@components/Demo';
 import THEMES from '@data/themes.json';
 import PRODUCTS from '@data/products.json';
 
+import getTitle from '@components/Title';
+
+
+export async function generateMetadata({ params }) {
+
+	let demoParams = getDemoParams(params.demo);
+
+	if (demoParams.demo) {
+		return getTitle(await DemoService.getDemoName(demoParams.product, demoParams.demo))
+	} else {
+		return getTitle(PRODUCTS[demoParams.product].name + ' 示例')
+	}
+}
+
+
+function getDemoParams(params) {
+	let product = params[0],
+		demo = null,
+		theme = null;
+
+
+	if (params.length === 3) {
+		demo = params[1];
+		theme = params[2]
+	} else if (params.length === 2) {
+		if (THEMES.filter(t => {
+			return t.code === params[1]
+		}).length) {
+			theme = params[1]
+		} else {
+			demo = params[1];
+		}
+	}
+
+	return {
+		product: product,
+		demo: demo,
+		theme: theme
+	}
+}
 
 export async function generateStaticParams() {
 
@@ -55,30 +95,14 @@ export async function generateStaticParams() {
 
 
 async function getData(params) {
-	let product = params[0],
-		demo = null,
-		theme = null;
 
+	let demoParams = getDemoParams(params);
 
-	if (params.length === 3) {
-		demo = params[1];
-		theme = params[2]
-	} else if (params.length === 2) {
-		if (THEMES.filter(t => {
-			return t.code === params[1]
-		}).length) {
-			theme = params[1]
-		} else {
-			demo = params[1];
-		}
-	}
+	let demos = await DemoService.getDemoByProduct(demoParams.product, false, demoParams.demo, demoParams.theme);
 
-	let demos = await DemoService.getDemoByProduct(product, false, demo, theme);
-
-	demos.product = product;
-	demos.theme = theme;
-	demos.themes = THEMES;
-
+	Object.keys(demoParams).map(key => {
+		demos[key] = demoParams[key];
+	});
 
 	if (demos.demo) {
 		demos._global = {

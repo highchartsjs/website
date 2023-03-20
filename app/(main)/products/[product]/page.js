@@ -1,23 +1,25 @@
 
 import PRODUCTS from '@data/products.json';
 
+import { AddOnsProductCodes, AddOnsProductNameMap } from '@data/addons';
+
 import ProductService from '@service/ProductService';
 
 import "@styles/autoptimize.css";
-import Breadcurmb  from '@components/Breadcrumb';
+import Breadcrumb from '@components/Breadcrumb';
 import Accordion from '@components/Accordion';
 import AddOnBoxes from '@components/AddOnBoxes';
 import AdvantageTable from '@components/AdvantageTable';
+import getTitle from '@components/Title';
+
+
 
 export async function generateStaticParams() {
 
-	return Object.keys(PRODUCTS).concat([
-		'highcharts-editor',
-		'highcharts-advantage',
-		'wrappers',
-		'add-ons',
-		'highcharts-mobile'
-	]).reduce((pre, cur) => {
+	return Object.keys(PRODUCTS).concat(
+		AddOnsProductCodes
+
+	).reduce((pre, cur) => {
 		pre.push({
 			product: cur
 		});
@@ -29,13 +31,17 @@ export async function getData(product) {
 	return await ProductService.getData(product);
 };
 
+export function generateMetadata({ params }) {
+	return getTitle(PRODUCTS[params.product] ? PRODUCTS[params.product].name + ' 功能特性' : AddOnsProductNameMap[params.product]);
+}
+
 export default async function Page(props) {
 	let product = props.params.product;
 	let data = await getData(product);
 	data.code = product;
 	let coreFeature = data['core-features'];
 	return <>
-		<Breadcurmb paths={['products', product]}></Breadcurmb>
+		<Breadcrumb paths={['products', product]} drakTheme={true}></Breadcrumb>
 		<div class="product-pages" id="content">
 			<main class="site-main" id="main" role="main">
 				<div class="pb-2 content-fluid bkgHeroBackground desktop-ver txtWhite">
@@ -55,15 +61,15 @@ export default async function Page(props) {
 								<p dangerouslySetInnerHTML={{ __html: data.description }}></p>
 								{
 									data.buttons &&
-										<div class="row">
-											<div class="col-12">
-												<div class="row button-rows">
-													{data.buttons.map((button, i) =>
-														<div class="col-6" key={"button" + i}> <a class={"btn " + button.class} href={button.link}>{button.name}</a></div>
-													)}
-												</div>
+									<div class="row">
+										<div class="col-12">
+											<div class="row button-rows">
+												{data.buttons.map((button, i) =>
+													<div class="col-6" key={"button" + i}> <a class={"btn " + button.class} href={button.link}>{button.name}</a></div>
+												)}
 											</div>
 										</div>
+									</div>
 								}
 
 							</div>
@@ -119,7 +125,7 @@ export default async function Page(props) {
 					</div>
 				</div> */}
 				{
-					data.demos  &&
+					data.demos &&
 					<div class="content-fluid bkgMudLogo txtWhite">
 						<div class="container">
 							<div class="row">
@@ -148,7 +154,7 @@ export default async function Page(props) {
 					</div>
 				}
 
-				{ data.features &&
+				{data.features &&
 					<div class="content-fluid bkgWhite product-features features" id="features">
 						<div class="container">
 							<div class="row">
@@ -186,27 +192,27 @@ export default async function Page(props) {
 						</>
 
 						:
-						<>  
+						<>
 							{
-								coreFeature && 
-									<div class="content-fluid bkgWhite product-features features" id="features">
-										<div class="container">
-											<div class="row">
-												<div class="col-12 col-md-3">
-													<div class="row">
-														<div class="col-8 col-md-12">
-															<h3>Highcharts 基础功能特性</h3>
-														</div>
-														<div class="col-4 col-md-12"> <img src="https://wp-assets.highcharts.com/svg/accessibility_illo.svg" alt="" /></div>
+								coreFeature &&
+								<div class="content-fluid bkgWhite product-features features" id="features">
+									<div class="container">
+										<div class="row">
+											<div class="col-12 col-md-3">
+												<div class="row">
+													<div class="col-8 col-md-12">
+														<h3>Highcharts 基础功能特性</h3>
 													</div>
+													<div class="col-4 col-md-12"> <img src="https://wp-assets.highcharts.com/svg/accessibility_illo.svg" alt="" /></div>
 												</div>
-												<div class="col-12 col-md-9">
-													<Accordion items={coreFeature} options={{
-														code: 'features'
-													}}></Accordion>
-													{/* <div class="accordion accordion-parent" id="accordion-parent-"> */}
+											</div>
+											<div class="col-12 col-md-9">
+												<Accordion items={coreFeature} options={{
+													code: 'features'
+												}}></Accordion>
+												{/* <div class="accordion accordion-parent" id="accordion-parent-"> */}
 
-														{/* {
+												{/* {
 															data['core-features'].map((feature, i) =>
 																<div class="card" key={'core-feature' + i}>
 																	<div class="card-header p-0">
@@ -229,11 +235,11 @@ export default async function Page(props) {
 															)
 														} */}
 
-													{/* </div> */}
-												</div>
+												{/* </div> */}
 											</div>
 										</div>
 									</div>
+								</div>
 							}
 
 							<div class="content-fluid bkgWhite" id="vibrant-documentation">
