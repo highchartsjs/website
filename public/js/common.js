@@ -24,3 +24,8 @@
 		
 // 	}
 // }
+
+window.onload = function() {
+	// init all legacy boostrap js components tooltip, collapsed
+	console.log('init')
+}

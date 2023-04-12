@@ -39,56 +39,51 @@ export async function getData() {
 	return roadmap
 }
 
-import "@styles/autoptimize.css";
 
 const Roadmap = async function (props) {
-
 	let data = await getData();
-
-	return <div id="full-width-page-wrapper">
+	return <section id="content">
 		<Breadcrumb paths='roadmap'></Breadcrumb>
-		<div id="content">
-			<main className="site-main" id="main" role="main">
-				<div className="content-fluid">
-					<div className="container">
-						<div className="row">
-							<div className="col-12">
-								<h1 className="pb-1">{data.title}</h1>
-							</div>
+		<main className="site-main" id="main" role="main">
+			<div className="content-fluid">
+				<div className="container">
+					<div className="row">
+						<div className="col-12">
+							<h1 className="pb-1">{data.title}</h1>
 						</div>
 					</div>
 				</div>
-				<div className="content-fluid">
-					<div className="container">
-						<div className="row">
-							<div className="col-12 col-md-8">
-								<p className="small-text">{data.date}</p>
-								<p>{data.description}</p>
-							</div>
+			</div>
+			<div className="content-fluid">
+				<div className="container">
+					<div className="row">
+						<div className="col-12 col-md-8">
+							<p className="small-text">{data.date}</p>
+							<p>{data.description}</p>
 						</div>
 					</div>
 				</div>
-				<div className="content-fluid">
-					<div className="container">
-						{
-							data.items.map(item =>
-								<div className="row mb-3" key={item.code}>
-									<div className="col-12 col-md-8 bkgWhiteCorners p-2"
-										dangerouslySetInnerHTML={{ __html: item.content }}
-									>
-									</div>
-									<div className="col-12 col-md-4 text-center notVisibleTablet">
-										<img decoding="async" className="fiftyImg"
-											src={"/images/" + item.img} alt="" /></div>
+			</div>
+			<div className="content-fluid">
+				<div className="container">
+					{
+						data.items.map(item =>
+							<div className="row mb-3" key={item.code}>
+								<div className="col-12 col-md-8 bkgWhiteCorners p-2"
+									dangerouslySetInnerHTML={{ __html: item.content }}
+								>
 								</div>
-							)
-						}
+								<div className="col-12 col-md-4 text-center notVisibleTablet">
+									<img decoding="async" className="fiftyImg"
+										src={"/svg/" + item.img} alt="" /></div>
+							</div>
+						)
+					}
 
-					</div>
 				</div>
-			</main>
-		</div>
-	</div>
+			</div>
+		</main>
+	</section>
 };
 
 export default Roadmap;

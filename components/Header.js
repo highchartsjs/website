@@ -24,7 +24,7 @@ function Header(props) {
 						</svg>
 					</button>
 				</div>
-				<div id="searchfield-container" className="searchbar mx-1">
+				{/* <div id="searchfield-container" className="searchbar mx-1">
 					<div className="addsearch-searchfield-container">
 						<form className="addsearch-searchfield" autoComplete="off" action="?" role="search">
 							<div className="search-field-wrapper">
@@ -38,7 +38,7 @@ function Header(props) {
 						<line x1="18" y1="6" x2="6" y2="18"></line>
 						<line x1="6" y1="6" x2="18" y2="18"></line>
 					</svg>
-				</button>
+				</button> */}
 			</nav>
 		</div>
 	</header>

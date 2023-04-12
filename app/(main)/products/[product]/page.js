@@ -5,13 +5,11 @@ import { AddOnsProductCodes, AddOnsProductNameMap } from '@data/addons';
 
 import ProductService from '@service/ProductService';
 
-import "@styles/autoptimize.css";
 import Breadcrumb from '@components/Breadcrumb';
 import Accordion from '@components/Accordion';
 import AddOnBoxes from '@components/AddOnBoxes';
 import AdvantageTable from '@components/AdvantageTable';
 import getTitle from '@components/Title';
-
 
 
 export async function generateStaticParams() {

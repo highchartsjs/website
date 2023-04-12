@@ -16,21 +16,21 @@ const nextConfig = {
 	},
 	async redirects() {
 		return [
-			{
-				source: '/demo',
-				destination: '/demo/highcharts',
-				permanent: true,
-			},
+			// {
+			// 	source: '/demo',
+			// 	destination: '/demo/highcharts',
+			// 	permanent: true,
+			// },
 		  {
 			 source: '/docs',
 			 destination: '/docs/index',
 			 permanent: true,
-		  },
-		  {
-			 source: '/changelog',
-			 destination: '/changelog/highcharts',
-			 permanent: true
 		  }
+		//   {
+		// 	 source: '/changelog',
+		// 	 destination: '/changelog/highcharts',
+		// 	 permanent: true
+		//   }
 		]
 	 },
 }

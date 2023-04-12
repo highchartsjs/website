@@ -1,51 +1,10 @@
 
-import DemoService from "@service/DemoSerive"
-import DemoList from "@components/DemoList";
-import Demo from '@components/Demo';
-
 import THEMES from '@data/themes.json';
 import PRODUCTS from '@data/products.json';
 
-import getTitle from '@components/Title';
+import DemoService from "@service/DemoSerive"
 
-
-export async function generateMetadata({ params }) {
-
-	let demoParams = getDemoParams(params.demo);
-
-	if (demoParams.demo) {
-		return getTitle(await DemoService.getDemoName(demoParams.product, demoParams.demo))
-	} else {
-		return getTitle(PRODUCTS[demoParams.product].name + ' 示例')
-	}
-}
-
-
-function getDemoParams(params) {
-	let product = params[0],
-		demo = null,
-		theme = null;
-
-
-	if (params.length === 3) {
-		demo = params[1];
-		theme = params[2]
-	} else if (params.length === 2) {
-		if (THEMES.filter(t => {
-			return t.code === params[1]
-		}).length) {
-			theme = params[1]
-		} else {
-			demo = params[1];
-		}
-	}
-
-	return {
-		product: product,
-		demo: demo,
-		theme: theme
-	}
-}
+import DemoPage from '../_demo.js';
 
 export async function generateStaticParams() {
 
@@ -93,31 +52,6 @@ export async function generateStaticParams() {
 }
 
 
-
-async function getData(params) {
-
-	let demoParams = getDemoParams(params);
-
-	let demos = await DemoService.getDemoByProduct(demoParams.product, false, demoParams.demo, demoParams.theme);
-
-	Object.keys(demoParams).map(key => {
-		demos[key] = demoParams[key];
-	});
-
-	if (demos.demo) {
-		demos._global = {
-			scripts: demos.current.data.scripts || null,
-			css: demos.current.data.css,
-			script: demos.current.data.js
-		};
-
-		demos.hidePageCover = true;
-	}
-
-	return demos;
-
-};
-
 // export async function generateMetadata(props) {
 
 // 	return {
@@ -126,7 +60,9 @@ async function getData(params) {
 // }
 
 async function DemoListOrDemo(props) {
-	let data = await getData(props.params.demo);
-	return data.demo ? <Demo props={data} /> : <DemoList props={data} />;
+	return DemoPage(props);
+	// let data = await getData(props.params.demo);
+	// return data.demo ? <Demo props={data} /> : <DemoList props={data} />;
+
 }
 export default DemoListOrDemo;

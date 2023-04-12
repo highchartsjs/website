@@ -31,11 +31,11 @@ const MenuItem = function ({ category, states, current, options, callback }) {
 		className={isCurrent ? 'active' : null}
 		key={category[key]}
 		layout
-		onClick={() => {
-			callback(category[key])
-		}}
+	
 	>
-		<button className="sidebar-category">
+		<button className="sidebar-category" 	onClick={() => {
+			callback(category[key])
+		}}>
 			<span>{category[name]}</span>
 			<span className="menu-icon">
 				<Icon />
@@ -64,7 +64,7 @@ const MenuItem = function ({ category, states, current, options, callback }) {
 const Menu = function ({ data, current, options }) {
 
 	const freeToggle = options.freeToggle;
-	
+
 	const [states, setStates] = useState({
 		isInitalActive: current.parent !== undefined,
 		currentParent: current.parent

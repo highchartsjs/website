@@ -2,7 +2,6 @@
 
 
 import Breadcurmb from '@components/Breadcrumb';
-import "@styles/autoptimize.css"
 
 export default function Product() {
 	return <>

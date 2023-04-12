@@ -7,6 +7,7 @@ products:
    - highcharts: dark_icon_highcharts.svg
    - maps: dark_icon_map.svg
    - dashboards: dark_icon_highcharts.svg
+   - highcharts-python: python-dark.svg
    - export-server: dark_icon_highcharts.svg
-   - highcharts-editor: editor_dark.svg
+   - highcharts-editor: exporter-dark.svg
 ---

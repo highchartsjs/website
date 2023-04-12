@@ -36,6 +36,22 @@ const HOME = function (props) {
 								</div>
 							</div>
 						</div>
+						<div id="pythonPopup" class="row ml-sm-3 mx-0">
+							<span id="comingSoonBadge" class="badge badge-primary font-weight-light">Coming soon</span>
+							<div class="col-12">
+								<div class="row">
+									<div class="col-5 px-0">
+										<img id="pythonPopupLogo" alt="" src="/svg/python-dark.svg"/>
+									</div>
+									<div class="col-7 pt-2">
+										<h2 class="h5 mt-0 mb-1 font-weight-bold">
+											<span id="pythonPopupHeading" class="mb-0 small-text">Highcharts for</span>Python
+										</h2>
+										<p><a class="txtWhite" href="/blog/news/python-integration-highcharts/">Explore Python Integration</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div className="container-page-animation" role="img" aria-label="Illustrative interactive stock chart">
 						<iframe className="page-animation iframe-animation heroChart mt-2"
@@ -143,10 +159,8 @@ const HOME = function (props) {
 					<div className="container">
 						<div className="row">
 							<div className="col-12 col-md-6">
-								<h2 className="txtWhite">How it All Started</h2>
-								<p className="txtWhite">It all started with a snowy mountain, measuring cane, a passion for
-									geology, and the urge to help the locals. Now, Highcharts is solving charting problems
-									for developers all around the world.</p>
+								<h2 className="txtWhite">这一切是如何开始的?</h2>
+									<p className="txtWhite">这一切都始于一座雪山、测量手杖和对地质学的热情，和帮助当地人的愿望。 现在，Highcharts 正在为全世界的开发者解决图表需求</p>
 								<p><a href="/about" className="btn btn-primary mt-1">Our Story</a></p>
 							</div>
 							<div className="col-12 col-md-6 mt-0 mt-md-2 txtWhite">

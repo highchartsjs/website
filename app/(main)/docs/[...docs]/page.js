@@ -7,7 +7,6 @@ import remarkHtml from 'remark-html';
 import remarkGfm from 'remark-gfm';
 import markToc from '@helper/markd-toc';
 
-import Head from "@components/Head";
 import Menu from '@components/Menu';
 import DocNav from '@components/DocNav';
 
@@ -73,7 +72,6 @@ export async function getData(paths) {
 	data.toc = toc;
 
 	return <>
-		<Head title={data.name}></Head>
 		<section className="docs main">
 			<aside className='sidebar'>
 				<Menu data={data.sidebar} current={{
