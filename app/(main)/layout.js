@@ -1,6 +1,6 @@
 
-import "@styles/lib/boostrap.min.css";
-import "@styles/autoptimize.css"
+// import "@styles/lib/boostrap.min.css";
+import "@styles/autoptimize.scss"
 
 import HEAD from 'next/head';
 import Header from "@components/Header";
