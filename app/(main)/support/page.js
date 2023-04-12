@@ -1,5 +1,4 @@
 
-import "@styles/autoptimize.css";
 import Accordion from "@components/Accordion";
 import getTitle from '@components/Title';
 import Breadcrumb from '@components/Breadcrumb';
