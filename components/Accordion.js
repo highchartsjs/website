@@ -1,9 +1,9 @@
 'use client'
 import { useState, useRef, useEffect } from 'react';
-import Icon from '@components/icons';
+import Icon from '@/components/icons';
 
 
-import "@styles/components/accordion.scss";
+import "@/styles/components/accordion.scss";
 
 const AccordionItem = function ({ states, item, index, onClick, key }) {
 
@@ -19,7 +19,7 @@ const AccordionItem = function ({ states, item, index, onClick, key }) {
 
 	return <div className={"card accordion-item" + (isActive ? ' active' : '')}>
 		<div className="card-header p-0">
-			<div className={"d-flex align-items-center mx-1" + (index === 0 ? "" : ' top-border')}>
+			<div className={"d-flex align-items-center mx-2" + (index === 0 ? "" : ' top-border')}>
 				<h3>
 					<button className="btn btn-link btn-block text-left acc-btn"
 						onClick={() => {

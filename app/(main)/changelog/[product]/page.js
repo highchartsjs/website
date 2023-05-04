@@ -2,7 +2,7 @@
 import changelog from '../_changelog';
 
 
-import PRODUCTS from '@data/products.json';
+import PRODUCTS from '@/data/products.json';
 
 export async function generateStaticParams() {
 

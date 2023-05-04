@@ -3,15 +3,16 @@
 import { useState } from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import Icon from '@/components/icons/index';
 
 import Menu from './Menu';
-import PRODUCTS from '@data/products.json';
+import PRODUCTS from '@/data/products.json';
 
-import ThemeSelector from '@components/ThemeSelector'
+import ThemeSelector from '@/components/ThemeSelector'
 
-import "@styles/css.css";
-import "@styles/demo.scss";
-import '@styles/menu.scss';
+// import "@/styles/css.css";
+import "@/styles/main_demo.scss";
+import '@/styles/menu.scss';
 
 function Demo({ props }) {
 
@@ -25,7 +26,7 @@ function Demo({ props }) {
 	let menuOptions = {
 		product: props.product,
 		key: 'code',
-		linkPrefix: '/demo/' +  props.product + '/'
+		linkPrefix: '/demo/' + props.product + '/'
 	};
 
 	let codeTypes = [{
@@ -51,7 +52,7 @@ function Demo({ props }) {
 	let scripts = '';
 	if (current.data.scripts && current.data.scripts.length) {
 		current.data.scripts.forEach(s => {
-			scripts += `<script src="${s}"></scripts>\n`
+			scripts += `<script src="${s}"></script>\n`
 		})
 	}
 
@@ -61,7 +62,7 @@ function Demo({ props }) {
 
 	return <div id="hs-component">
 		<div className='container-fluid'>
-			<div className="row d-none d-md-flex m-0">
+			<div id="header" className="row d-none d-md-flex m-0">
 				<div className="col"></div>
 				<div className="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 					<div id="comp-menu" className="page-header-container col-lg-12 col-md-12 col-sm-12 col-xs-12 d-none d-md-block">
@@ -70,13 +71,13 @@ function Demo({ props }) {
 							<h2 className="demo-name">
 								<a href="./">{productName}</a> › {props.current.name}
 							</h2>
-							<ThemeSelector theme={theme} linkPre={menuOptions.linkPrefix + props.demo}/>
+							<ThemeSelector theme={theme} linkPre={menuOptions.linkPrefix + props.demo} />
 						</div>
 					</div>
 				</div>
 			</div>
 			<div id="wrap" class="row m-0">
-				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 sidebar d-md-block">
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 sidebar d-md-block demo-menu">
 					<Menu data={demos} current={current} options={menuOptions}></Menu>
 				</div>
 				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 demo" id="content">
@@ -87,11 +88,16 @@ function Demo({ props }) {
 					</div> */}
 					<div class="chart-container">
 						{
-							current.pre ? 
-							<a href={menuOptions.linkPrefix  + current.pre + themeUrl} title="Previous (arrow left)" class="previous-example d-none d-md-block"><i class="fa fa-angle-left"></i></a> 
-							: null
+							current.pre ?
+								<a href={menuOptions.linkPrefix + current.pre + themeUrl} title="Previous (arrow left)" class="previous-example d-none d-md-block">
+									<Icon name="angle-left" size="55px" />
+								</a>
+								: null
 						}
-						<ul className="code-type">
+
+						<div className="demo-chart-wrapper" >
+							<style>{current.data.css}</style>
+							<ul className="code-type">
 								<li className={codeType === undefined ? 'active' : ''} onClick={() => setCodeType(undefined)}>预览</li>
 								{
 									codeTypes.map((type, i) =>
@@ -99,34 +105,38 @@ function Demo({ props }) {
 									)
 								}
 							</ul>
-						<div className="demo-chart-wrapper" >
-							<style>{current.data.css}</style>
 							<div dangerouslySetInnerHTML={{ __html: current.data.html }}></div>
 							{current.data.scripts.map(s =>
-							<script src={s}></script>
+								<script src={s}></script>
 							)}
-							<script defer="" type="text/javascript" dangerouslySetInnerHTML={{__html: current.data.js}}></script>
+							<script defer="" type="text/javascript" dangerouslySetInnerHTML={{ __html: current.data.js }}></script>
+							{
+							codeType !== undefined ?
+								<div className="code-show">
+									<SyntaxHighlighter language={codeTypes[codeType].language} style={docco} showLineNumbers={true}>
+										{
+											codeTypes[codeType].str
+										}
+									</SyntaxHighlighter>
+								</div> : undefined
+						}
 						</div>
-						{
-								codeType !== undefined ?
-									<div className="code-show">
-										<SyntaxHighlighter language={codeTypes[codeType].language}   style={docco}>
-											{
-												codeTypes[codeType].str
-											}
-										</SyntaxHighlighter>
-									</div> : undefined
-							}
-							{current.next ? 
-							<a class="next-example d-none d-md-block" title="Next (arrow right)" href={menuOptions.linkPrefix  + current.next + themeUrl}><i class="fa fa-angle-right"></i></a>
-							: null
-							}
 						
+						{current.next ?
+							<a class="next-example d-none d-md-block" title="Next (arrow right)"
+								href={menuOptions.linkPrefix + current.next + themeUrl}>
+								<Icon name="angle-right" size="55px" />
+							</a>
+							: null
+						}
+
 					</div>
 					<div id="demo-buttons" class="col">
-						<a class="button" id="jsfiddle" 
+						<a class="button" id="jsfiddle"
 							href={`https://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/${product}/demo/${props.demo}`} target="_new"
-						>Edit in jsFiddle <i class="fa fa-chevron-right"></i></a>
+						>Edit in jsFiddle
+							<Icon name="angle-right" size="16px"></Icon>
+						</a>
 
 						<a class="button" id="codepen" href="https://www.highcharts.com/samples/highcharts/demo/line-basic?codepen" target="_new">
 							Edit in CodePen <i class="fa fa-chevron-right"></i>

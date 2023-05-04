@@ -1,7 +1,7 @@
 
 
 
-import Breadcurmb from '@components/Breadcrumb';
+import Breadcurmb from '@/components/Breadcrumb';
 
 export default function Product() {
 	return <>

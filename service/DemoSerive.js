@@ -230,6 +230,8 @@ ${result.script}
 		return result;
 	},
 
+	
+
 	getJSON: async (product, code, theme) => {
 		let filename = path.join(process.cwd(), 'data/samples/' + product) + '/demo/' + code + '.json';
 		if (FS.existsSync(filename)) {
@@ -239,6 +241,8 @@ ${result.script}
 				result.scripts.push('https://' + CDNDomain + HighchartsVersion + '/themes/' + theme + '.js');
 				result.npm = DemoService.getNPMImport(result.scripts);
 			}
+
+			result.css += '.highcharts-menu hr {margin: unset}'
 			return result;
 		}
 		return null;

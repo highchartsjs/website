@@ -9,30 +9,30 @@ const additional = [
 	}
 ];
 
-const integrations = [
-	{
-		"code": "wrappers",
-		"title": "扩展包"
-	},
-	{
-		"code": "add-ons",
-		"title": "插件"
-	},
-	{
-		"code": "frameworks",
-		"title": "框架"
-	},
-	{
-		"code": "highcharts-mobile",
-		"title": "手机端"
-	}
-];
+// const integrations = [
+// 	{
+// 		"code": "wrappers",
+// 		"title": "扩展包"
+// 	},
+// 	{
+// 		"code": "add-ons",
+// 		"title": "插件"
+// 	},
+// 	{
+// 		"code": "frameworks",
+// 		"title": "框架"
+// 	},
+// 	{
+// 		"code": "highcharts-mobile",
+// 		"title": "手机端"
+// 	}
+// ];
 
 
 let AddOnsProductCodes = [];
 let AddOnsProductNameMap = {};
 
-additional.concat(integrations).map(p => {
+additional.map(p => {
 	p.link = '/products/' + p.code;
 	AddOnsProductCodes.push(p.code);
 	AddOnsProductNameMap[p.code] = p.title;
@@ -40,5 +40,5 @@ additional.concat(integrations).map(p => {
 
 export { AddOnsProductCodes };
 export {AddOnsProductNameMap}
-export { integrations }
-export default additional.concat(integrations);
+// export { integrations }
+export default additional;

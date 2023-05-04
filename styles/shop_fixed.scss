@@ -1,0 +1,75 @@
+.collapse:not(.show) {
+   display: block;
+   // height: 0;
+}
+
+.accordion-collapse {
+   overflow: hidden;
+   transition: height 0.5s;
+}
+
+.accordion-item {
+   border: none;
+   border-bottom: 1px solid #aaa;
+}
+
+.Faq-content {
+   padding-bottom: 1.3rem;
+}
+
+.Faq-button svg {
+   transform: rotate(-90deg);
+   transition: transform 0.3s;
+}
+
+.Faq-button.active svg {
+   transform: rotate(0deg);
+}
+
+.Product-list-license-info {
+   .accordion-item {
+      background: none;
+      border-radius: 0;
+   }
+
+   .accordion-item:last-child {
+      border: none;
+   }
+
+   h4 {
+      font-size: 1em;
+   }
+
+   .Faq-button {
+      padding: 0.5rem 0;
+   }
+
+   .Faq-content {
+      font-size: 0.8rem;
+      margin-left: 32px;
+   }
+}
+
+.Addon-dropdown .dropdown-menu {
+   left: 16px;
+}
+
+.Small-accordion {
+	.Faq-content {
+      font-size: 14px;
+      margin-left: 32px;
+		line-height: 1.5;
+		
+   }
+	.Faq-button svg {
+		margin-top: 0;
+	}
+}
+
+.Product-list-feature-name {
+	margin-left: 1rem;
+}
+
+.Toggle-button-label {
+	font-weight: normal;
+}

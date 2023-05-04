@@ -1,16 +1,18 @@
-import Accordion from '@components/Accordion.js';
+import Accordion from '@/components/Accordion.js';
+import Breadcrumb from '@/components/Breadcrumb';
 
 const ContactItems = [{
 	title: '技术支持',
-	content: `<p>Our technical team is available on several platforms
-	and there is a good chance you will find what you are looking for on our
-	Support Page.</p><a href="/support" class="btn mb-0 mt-1 btn-small btn-primary"> Go to Support</a></p>`
+	content: `<p>我们的技术团队在多个平台上提供服务，您可以在我们的支持页面上找到您正在寻找的东西。</p><a href="/support" class="btn mb-0 mt-1 btn-small btn-primary"> 服务与支持</a></p>`
 },{
 	title: '销售咨询',
-	content: `<p>Would you like to speak to a sales representative? Submit a sales inquiry form to get in touch with our Sales team.</p> <a href="https://shop.highsoft.com/contact" class="btn btn-primary mb-0 mt-1 btn-small"> Submit a sales inquiry</a></p>`
+	content: `<p>您想与销售代表交谈吗？提交一份销售咨询表，与我们的销售团队取得联系。</p>
+	<a href="https://shop.highsoft.com/contact" class="btn btn-primary mb-0 mt-1 btn-small" target="_blank">提交销售咨询</a></p>`
 },{
 	title: '其他咨询',
-	content:  `<p>Are you looking for our company information, pricing, product information, or our terms and conditions information?&nbsp;<a href="https://shop.highcharts.com/customer-service">Please refer to our customer service page</a>&nbsp;or<a href="https://shop.highcharts.com/#faq"> check out our frequently asked questions.</a></p>`
+	content:  `<p>您是否在寻找我们的公司信息、价格、产品信息，或我们的条款和条件信息？
+	<a href="https://shop.highcharts.com/customer-service">请参阅我们的客户服务页面</a>&nbsp;或
+	<a href="https://shop.highcharts.com/#faq"> 请查看我们的常见问题页面。</a></p>`
 },{
 	title: '公司地址',
 	content: `<p><strong>Visit us in Vik</strong> <br /> Highsoft AS <br />Sentrumsgata
@@ -22,6 +24,7 @@ const ContactItems = [{
 async function Contact() {
 	return <div id="full-width-page-wrapper">
 		<div id="content">
+		<Breadcrumb paths={['about', 'contact']}></Breadcrumb>
 			<main class="site-main" id="main" role="main">
 				<div class="content-fluid">
 					<div class="container">

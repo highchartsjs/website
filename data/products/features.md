@@ -1,31 +1,30 @@
 ---
-features:
-- title: work with your stack
-  content: All our charting libraries work with any back-end database or server stack. 	Data can be given in any form, including CSV, JSON or loaded and updated live. Wrappers for most popular languages, such as .Net, PHP, Python, R, and Java, as well as iOS, and Android, and frameworks like Angular, Vue and React, are available from Highcharts or our community.
-- title: Typescript
-  content: Thanks to the integration of TypeScript declarations, the Highcharts NPM package allows type checking for most Highcharts options and functions, including auto-complete code with integrated documentation for TypeScript-capable editors like Visual Studio Code.
-- title: Accessibility & Sonification
-  content: Highcharts offers an accessible interactive chart solution to empower people with disabilities. Each Highcharts license includes our Accessibility module and a flexible sonification API. The Accessibility module allows you to create charts as accessible as possible, whereas the sonification API helps you support multiple ways to bring data to life with sound. Visit our Accessibility Portal for more information.
-- title: Touch and  Mobile-optimized
-  content: Intelligent responsiveness not only adjusts the chart to the dimensions of its container but also automatically places non-graph elements such as labels, legends, and headings in the most optimal location. Multi-touch gesture support allows for a native experience on mobile and touch screens. Touch gestures include single touch-drag for data inspection, multi-touch for  zooming, and more.
-- title: Annotaions, supporting user interaction
-  content: With annotations, developers may describe charts or data points by drawing simple shapes and text anywhere on the canvas or tethered to specific data points. Alternatively, the annotation module includes an API to build user interfaces, such as buttons, toolbars, and dialogues, enabling end-users to place their annotations on a chart. Placement and visibility of annotations intelligently respond to canvas/screen size at run-time.
-- title: Vibrant community
-  content: The largest developer community of any premium charting tool on Github, StackOverflow, and other forums is eager to offer additional assistance, platform-specific implementation advice and inspiration when you need it. In addition, we have dozen dedicated support engineers monitoring our forums, StackOverflow, GitHub and support emails.
-- title: BigData ready
-  content: When your need to render thousands or millions of data points in the browser, our WebGL-powered  boost module delivers incredible speed.
-- title: Full-blown editors for end-users,
-  content: The free Highcharts Editor enables developers to embed a full-featured charts editor to their CMS or web app with just a few lines of code.
+- title: 与您的技术栈一起工作
+  content: 我们所有的图表库都能与任何后端数据库或服务端技术栈一起工作。	数据可以以任何形式提供，包括CSV、JSON或实时加载和更新。大多数流行的语言，如.Net、PHP、Python、R 和 Java，以及iOS和Android，还有Angular、Vue和React等框架，都可以从 Highcharts 官方或社区获得到相关的扩展包。
+- title: Typescript 支持
+  content:  由于整合了 TypeScript 声明，Highcharts NPM 包允许对大多数 Highcharts 配置和函数进行类型检查，包括为 Visual Studio Code 等支持 TypeScript 的编辑器提供自动完成代码的集成文档。
+- title: 无障碍访问与声效化
+  content: Highcharts提供了一个无障碍的互动图表解决方案，以增强残疾人的能力。每个Highcharts许可证都包括我们的无障碍模块和一个灵活的声化API。无障碍模块允许你创建尽可能无障碍的图表，而声音化API则帮助你支持多种方式，用声音让数据变得生动。请访问我们的可访问性门户网站了解更多信息。
+- title: 触摸和移动端优化
+  content: 智能响应性不仅使图表适应其容器的尺寸，而且还自动将非图表元素，如标签、图例和标题放在最理想的位置。多点触摸手势支持允许在移动和触摸屏幕上获得本地体验。触摸手势包括单次触摸拖动进行数据检查，多点触摸进行缩放，以及更多。
+- title: 标注，支持用户交互
+  content: 有了注释，开发者可以通过在画布上的任何地方绘制简单的形状和文字来描述图表或数据点，或者与特定的数据点相联系。另外，注释模块包括一个建立用户界面的API，如按钮、工具栏和对话框，使终端用户能够在图表上放置他们的注释。注释的放置和可见性在运行时智能地响应画布/屏幕大小。
+- title: 充满活力的社区
+  content: 在Github、StackOverflow和其他论坛上的任何高级图表工具中，最大的开发者社区渴望在你需要时提供额外的帮助、特定平台的实施建议和灵感。此外，我们有十几位专门的支持工程师监控我们的论坛、StackOverflow、GitHub和支持邮件。
+- title: 支持大数据
+  content: 当你需要在浏览器中渲染数以千计或数以百万计的数据点时，我们由WebGL驱动的提升模块可以提供令人难以置信的速度。
+- title: 为终端用户提供全面的编辑
+  content: 免费的Highcharts编辑器使开发者只需几行代码就能将全功能的图表编辑器嵌入到他们的CMS或网络应用中。
 - title: 支持导出和打印功能
-  content: With the exporting module enabled, your users can export the chart to PNG, JPG, PDF or SVG format at the click of a button, or print the chart directly from the web page.
+  content: 启用导出模块后，你的用户可以通过点击按钮将图表导出为PNG、JPG、PDF或SVG格式，或者直接从网页上打印图表。
 - title: 调试器支持
-  content: The Highcharts Debugger will help you speed up development by providing instantaneous warnings and error reports above your charts. The error messages provide clear instructions on how to resolve your issue.
+  content: Highcharts调试器将通过在图表上方提供即时的警告和错误报告来帮助你加快开发速度。错误信息提供了如何解决你的问题的明确指示。
 - title: 动态的
-  content: Highcharts simple options structure allows for deep customization, and styling can be done via JavaScript or CSS. Highcharts is also extendable and pluggable for experts seeking advanced animations and functionality.
-- title: Options are  optional
-  content: Highcharts simple options-structure allows for deep customization, and styling can be done via JavaScript or CSS. Highcharts is also extendable and pluggable for experts seeking advanced animations and functionality. Check out some advanced cool use cases in our community section, and plugins in our our extensions directory.
-- title: 开源
-  content: You are allowed to download the source code, inspect it, and make your edits as you wish. A trial license is not required to try the code. When you are ready to use the software for commercial projects, the appropriate license must be in place. Please see our shop for more information.
-- title: Data processing in the browser
-  content: With Highcharts, source data can be post-processed in the client to improve the user experience. You may enable marker clusters to your Scatter series type of charts, and choose from 3 clustering algorithms. Another excellent data processing feature is the ability to sort data, regardless of whether the data source is sorted.
+  content: Highcharts简单的选项结构允许深度定制，而且造型可以通过JavaScript或CSS完成。Highcharts也是可扩展和可插拔的，适合寻求高级动画和功能的专家。
+- title: 配置选项是可选的
+  content: Highcharts简单的选项结构允许深度定制，而且造型可以通过JavaScript或CSS完成。Highcharts对于寻求高级动画和功能的专家来说，也是可扩展和可插拔的。在我们的社区部分查看一些高级的很酷的用例，在我们的扩展目录中查看插件。
+- title: 开放源代码
+  content: 你可以下载源代码，检查它，并按你的意愿进行编辑。试用该代码不需要试用许可证。当你准备将该软件用于商业项目时，必须有相应的许可证。请参阅我们的商店以了解更多信息。
+- title: 在浏览器中进行数据处理
+  content: 使用Highcharts，源数据可以在客户端进行后期处理，以改善用户体验。你可以对你的散点系列类型的图表启用标记群，并从3种聚类算法中选择。另一个优秀的数据处理功能是能够对数据进行排序，无论数据源是否被排序。
 ---

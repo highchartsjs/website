@@ -1,12 +1,12 @@
 
-import DemoService from "@service/DemoSerive"
-import DemoList from "@components/DemoList";
-import Demo from '@components/Demo';
+import DemoService from "@/service/DemoSerive"
+import DemoList from "@/components/DemoList";
+import Demo from '@/components/Demo';
 
-import THEMES from '@data/themes.json';
-import PRODUCTS from '@data/products.json';
+import THEMES from '@/data/themes.json';
+import PRODUCTS from '@/data/products.json';
 
-import getTitle from '@components/Title';
+import getTitle from '@/components/Title';
 
 
 export async function generateMetadata({ params }) {

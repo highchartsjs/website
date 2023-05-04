@@ -1,6 +1,6 @@
 
-import Testimonial from '@components/Testimonial';
-import getTitle from '@components/Title';
+import Testimonial from '@/components/Testimonial';
+import getTitle from '@/components/Title';
 
 export const metadata = getTitle('Interactive javascript charts library');
 
@@ -11,9 +11,9 @@ const HOME = function (props) {
 				<div className="container-fluid hero-container-outside px-0 h-100 txtWhite">
 					<div className="row">
 						<div className="col-12">
-							<div className="container px-0 mt-3">
+							<div className="container px-0 mt-4">
 								<div className="row">
-									<div className="col-12 text-center">
+									<div className="col-12 text-center mt-2">
 										<h1>让数据可视化更简单</h1>
 									</div>
 								</div>
@@ -36,27 +36,28 @@ const HOME = function (props) {
 								</div>
 							</div>
 						</div>
-						<div id="pythonPopup" class="row ml-sm-3 mx-0">
-							<span id="comingSoonBadge" class="badge badge-primary font-weight-light">Coming soon</span>
+					</div>
+					<div id="newsPopup" class="row">
+							<div class="col-12 newContainer">
+								<h2 class="h5 font-weight-bold">最新动态</h2>
+							</div>
 							<div class="col-12">
 								<div class="row">
-									<div class="col-5 px-0">
-										<img id="pythonPopupLogo" alt="" src="/svg/python-dark.svg"/>
+									<div class="col-2 px-0 text-center">
+										<img id="newsPopupLogo" alt="" src="/svg/python-whatsnew.svg" />
 									</div>
-									<div class="col-7 pt-2">
-										<h2 class="h5 mt-0 mb-1 font-weight-bold">
-											<span id="pythonPopupHeading" class="mb-0 small-text">Highcharts for</span>Python
-										</h2>
-										<p><a class="txtWhite" href="/blog/news/python-integration-highcharts/">Explore Python Integration</a></p>
+									<div class="col-10">
+										<h3 class="h5 mt-0 mb-0 font-weight-bold">
+											<span id="newsPopupHeading" class="mb-0 small-text">Highcharts </span>Python 扩展包</h3>
+										<p><a class="txtWhite greenLink" href="/integrations/python">探索 Python 扩展包</a></p>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 					<div className="container-page-animation" role="img" aria-label="Illustrative interactive stock chart">
 						<iframe className="page-animation iframe-animation heroChart mt-2"
 							id="heroChart" scrolling="no" tabindex="0" title="Interactive Highcharts Demo"
-							src="/homepage-2021.html">
+							src="/homepage-2023.html">
 						</iframe>
 					</div>
 				</div>
@@ -71,10 +72,11 @@ const HOME = function (props) {
 							<div className="row">
 								<div className="col-12">
 									<div className="logo p-1 p-md-2 mt-2">
-										<img alt="" className="d-block mb-0" src="/svg/logo_mark.svg" />
-										<h3 className="d-block text-light m-1 productHPTitleDark"><a href="/products/highcharts" className="txtWhite">Highcharts JS</a></h3>
+										<img alt="" className="d-block mb-0" src="/svg/core-mark.svg" />
+										<h3 className="d-block text-light m-1 productHPTitleDark"><a href="/products/highcharts" className="txtWhite">Highcharts Core</a></h3>
 										<div className="px-2 mb-1">
-											<p className="logo-text-width p-0">包含所有基础图表：<br />线图、面积图、柱形图、关系图、仪表图、高级图形等其他您所需要的基础图表</p>
+											
+											<p className="logo-text-width p-0">包括所有基础的图表类型：线形图、柱形图、面积图、饼形图、散点、气泡、关系、3D 图等 20多种</p>
 										</div>
 									</div>
 								</div>
@@ -88,7 +90,7 @@ const HOME = function (props) {
 										<div className="card-body text-center pb-2">
 											<h3 className="card-title mt-0 productHPTitle"><span className="card-subtitle mb-1 newline txt-uppercase">Combine
 												With</span><a href="/products/maps">Highcharts Maps</a></h3>
-											<p className="card-text">地理、位置数据可视化。</p>
+											<p className="card-text">展示与地理有关的各种信息，包括行政边界、点位、河流等</p>
 										</div>
 									</div>
 								</div>
@@ -97,7 +99,7 @@ const HOME = function (props) {
 										<div className="text-center pb-1 pb-md-0"><img alt="" src="/svg/stock-dark.svg" /></div>
 										<div className="card-body text-center pb-2">
 											<h3 className="card-title mt-0 productHPTitle"><span className="card-subtitle mb-1 newline txt-uppercase">Combine With</span> <a href="/products/stock">Highcharts Stock</a></h3>
-											<p className="card-text">交互式股票及时间序列数据图表。</p>
+											<p className="card-text">在任何平台上实现交互式股票或常规的时间线图表。</p>
 										</div>
 									</div>
 								</div>
@@ -106,7 +108,7 @@ const HOME = function (props) {
 										<div className="text-center pb-1 pb-md-0"><img alt="" src="/svg/gantt-dark.svg" /></div>
 										<div className="card-body text-center pb-2 ">
 											<h3 className="card-title mt-0 productHPTitle"><span className="card-subtitle mb-1 newline txt-uppercase">Combine With</span> <a href="/products/gantt">Highcharts Gantt</a></h3>
-											<p className="card-text">交互性甘特图可视化</p>
+											<p className="card-text">交互性甘特图可视化，用于展示任务进度、资管管理等</p>
 										</div>
 									</div>
 								</div>
@@ -120,8 +122,8 @@ const HOME = function (props) {
 										<div className="card-body text-center pb-3">
 											<h3 className="card-title mt-0 row productHPTitle"> <span className="col-12 order-2">
 												<a href="/products/highcharts-advantage/">
-													高级技术支持服务</a></span> <span className="col-12 card-subtitle newline order-1">版本更新及技术支持服务</span></h3>
-											<p className="card-text">一对一的技术支持服务及新版本更新服务。</p>
+													Highcharts Advantage</a></span> <span className="col-12 card-subtitle newline order-1">版本更新及技术支持服务</span></h3>
+											<p className="card-text">技术支持服务及新版本更新服务。</p>
 										</div>
 									</div>
 								</div>
@@ -160,8 +162,8 @@ const HOME = function (props) {
 						<div className="row">
 							<div className="col-12 col-md-6">
 								<h2 className="txtWhite">这一切是如何开始的?</h2>
-									<p className="txtWhite">这一切都始于一座雪山、测量手杖和对地质学的热情，和帮助当地人的愿望。 现在，Highcharts 正在为全世界的开发者解决图表需求</p>
-								<p><a href="/about" className="btn btn-primary mt-1">Our Story</a></p>
+								<p className="txtWhite">这一切都始于一座雪山、测量手杖和对地质学的热情，和帮助当地人的愿望。 现在，Highcharts 正在为全世界的开发者解决图表需求</p>
+								<p><a href="/about" className="btn btn-primary mt-1">查看品牌故事</a></p>
 							</div>
 							<div className="col-12 col-md-6 mt-0 mt-md-2 txtWhite">
 								<button data-title="Our Story" data-url="https://player.vimeo.com/video/643496165"

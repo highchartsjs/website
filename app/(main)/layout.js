@@ -1,10 +1,10 @@
 
-// import "@styles/lib/boostrap.min.css";
-import "@styles/autoptimize.scss"
+// import "@/styles/lib/boostrap.min.css";
+import "@/styles/main.scss"
 
 import HEAD from 'next/head';
-import Header from "@components/Header";
-import Footer from '@components/Footer';
+import Header from "@/components/Header";
+import Footer from '@/components/Footer';
 export default function RootLayout({ children, params }) {
 	return (
 		<html lang="en">

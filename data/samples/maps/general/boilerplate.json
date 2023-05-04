@@ -1,0 +1,1 @@
+{"js":"// Initiate the chart\nHighcharts.mapChart('container', {});","css":"","html":"\n<div id=\"container\"></div>\n","npm":"// 安装\nnpm install highcharts@11.0.0 --save\n\n// import 模块 \nimport Highcharts from 'highcharts/highmaps';\n\n// 初始化模块\n","scripts":["https://code.highcharts.com/maps/11.0.0/highmaps.js"]}

@@ -1,4 +1,4 @@
-import THEMES from '@data/themes.json'
+import THEMES from '@/data/themes.json'
 
 /**
  * Highcharts Theme Selector for Demo Pages

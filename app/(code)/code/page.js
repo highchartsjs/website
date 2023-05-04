@@ -1,9 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react';
-import products from '@data/products.json';
-import Versions from '@data/versions.json';
-import files from '@data/files.json';
+import products from '@/data/products.json';
+import Versions from '@/data/versions.json';
+import files from '@/data/files.json';
 const domain = process.env.NEXT_PUBLIC_CDN_DOMAIN;
 
 /**

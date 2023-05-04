@@ -1,11 +1,11 @@
 
-import PRODUCTS from '@data/products.json';
+import PRODUCTS from '@/data/products.json';
 
-import DocService from '@service/DocService';
+import DocService from '@/service/DocService';
 
 
-import getTitle from '@components/Title';
-import Breadcrumb from '@components/Breadcrumb';
+import getTitle from '@/components/Title';
+import Breadcrumb from '@/components/Breadcrumb';
 
 
 export async function getData(product) {

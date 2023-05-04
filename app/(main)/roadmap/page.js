@@ -1,12 +1,12 @@
-import FS from "@helper/fs";
+import FS from "@/helper/fs";
 const path = require('path');
 import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import remarkHtml from 'remark-html';
 const matter = require('gray-matter');
 
-import getTitle from '@components/Title';
-import Breadcrumb from '@components/Breadcrumb';
+import getTitle from '@/components/Title';
+import Breadcrumb from '@/components/Breadcrumb';
 export const metadata = getTitle('发展规划');
 
 const DataPath = path.join(process.cwd(), 'data/docs/roadmap/');
@@ -69,7 +69,7 @@ const Roadmap = async function (props) {
 					{
 						data.items.map(item =>
 							<div className="row mb-3" key={item.code}>
-								<div className="col-12 col-md-8 bkgWhiteCorners p-2"
+								<div className="col-12 col-md-8 bkgWhiteCorners p-2" style={{lineHeight: 2}}
 									dangerouslySetInnerHTML={{ __html: item.content }}
 								>
 								</div>

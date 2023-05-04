@@ -1,6 +1,6 @@
 {
 	"highcharts": {
-		"name": "Highcharts JS",
+		"name": "Highcharts Core",
 		"code": "",
 		"main": "highcharts.js",
 		"zip": "Highcharts"

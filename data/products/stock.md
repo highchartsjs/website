@@ -1,7 +1,7 @@
 ---
 title:  Highcharts Stock
 type: ADDITIONAL PRODUCT
-description: Create stock or general timeline charts for your web and mobile apps. Features sophisticated navigation for high-volume data, user annotations and over 40 built-in Technical Indicators. Based on Highcharts, the leading, battle-tested SVG-based charting tool, and leader in accessible charts.
+description: 为您的网络和移动应用程序创建股票或通用的时间线图表。它具有复杂的导航功能，适用于大量的数据、用户标注和40多个内置的技术指标。基于Highcharts，它是领先的、经过战斗考验的基于SVG的图表工具，是无障碍图表的领导者。
 buttons:
 - name: 免费下载试用
   link: /download
@@ -23,28 +23,28 @@ demos:
   iframe: https://www.highcharts.com/samples/nonav/highcharts/website/small-demos-stock?charts=ao
   link: /demo/stock/all-indicators/brand-dark
 features: 
-- title: 40+ Tech indicators
-  description: Including SMA, MACD, CCI, RSI, Stochastic, Bollinger Bands, Pivot Points, PSAR, and Ichimoku Kinko Hyo. Check out the demo.
-  cover: https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2022/06/22111802/feature-stock-indicators.png
-- title: Data grouping
-  description: Group data into optional groups like days, weeks and months with Highcharts Stocks’ blazingly-fast data grouping feature.
-  cover: https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2022/06/22093755/feature-stock-grouping.png
-- title: Navigation For Finance
-  description: Includes small navigator series, preset date ranges, date picker, adjustable panes, scrolling and panning.
-  cover: https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2022/06/22093859/eature-stock-navigator.png
-- title: Secure
-  description: Use Highcharts Stock on your intranet or password protected websites without worrying about anyone siphoning your data.
-  cover: https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2022/06/22093929/eature-stock-security.png
-- title: Stock Tools
-  description: Analysts and end-users can annotate and apply statistical calculations on any data-set without the aid of developers.
-  cover: https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2022/06/22093809/feature-stock-annotations.png
-- title: Includes Highcharts
-  description: The Highcharts library is also included, which provides an additional 30 different chart types.
-  cover: https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2022/06/22091436/feature-all-ncludes-highcharts.png
+- title: 40+ 技术指标
+  description: 包含 SMA、MACD、CCI、RSI、Stochastic、Bollinger Bands、Pivot Points、PSAR、Ichimoku Kinko Hyo，详见 <a href="/demo/stock/all-indicators">例子</a>
+  cover: /uploads/feature-stock-indicators.png
+- title: 数据分组（Data grouping）
+  description: 利用 <a href="/docs/stock/data-grouping">Highcharts Stocks 极快的数据分组功能</a>，将数据分为可选择的组别，例如天、周和月
+  cover: /uploads/feature-stock-grouping.png
+- title: 金融导航功能
+  description: 包括<a href="/docs/stock/navigator">小型导航仪系列</a>、<a href="/docs/stock/range-selector>预设日期范围</a>、日期选择器、<a href="/docs/stock/axis-resizer">可调整的面板</a>、滚动和平移
+  cover: /uploads/eature-stock-navigator.png
+- title: 安全性
+  description: 在您的内部网或受密码保护的网站上使用 Highcharts Stock，而不必担心有人会截取您的数据。
+  cover: /uploads/eature-stock-security.png
+- title: 股票工具
+  description: 分析师和终端用户可以在任何数据集上进行注释和应用统计计算，而不需要开发人员的帮助。
+  cover: /uploads/feature-stock-annotations.png
+- title: 包含 Highcharts Core 
+  description: Highcharts 库也包括在内，它提供了另外30种不同的图表类型。
+  cover: /uploads/feature-all-ncludes-highcharts.png
 - title: Pivot Points
-  description: Visualize the momentum and trend of your data with pivot point indicators.
-  cover: https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2022/08/16124206/feature-stock-pivotpoints.png
+  description: 用枢轴点指标可视化你的数据的势头和趋势。
+  cover: /uploads//feature-stock-pivotpoints.png
 - title: Cumulative Sum
-  description: The Cumulative Sum tool sums all the previous values with the current value in a visible range.
-  cover: https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2022/08/16124210/feature-stock-sum.png
+  description: 累积总和工具将所有以前的数值与当前的数值在一个可见范围内相加。
+  cover: /uploads/feature-stock-sum.png
 ---

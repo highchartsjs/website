@@ -1,4 +1,4 @@
-// import '@styles/components/footer.scss';
+// import '@/styles/components/footer.scss';
 import Link from "next/link";
 
 const Menu = [{
@@ -139,7 +139,8 @@ const Footer = function (props) {
 			</div>
 			<div className="row pb30 desktop-version">
 				<div className="col py-1 pr-0 pb-3 text-left highchartsRights small-text">
-					<div> © {new Date().getFullYear()} Highcharts<span className="sep">. All rights reserved. </span></div>
+					<div> © {new Date().getFullYear()} Highcharts<span className="sep"> 保留所有权利，</span>
+					<a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备16004892号-1</a>，由 <a href="/about/parter">简数科技</a> 提供服务。</div>
 				</div>
 				<div className="col py-1 pl-0 pb-3 text-right">
 					<h2 className="h2-text-hidden">Social</h2>
@@ -149,7 +150,7 @@ const Footer = function (props) {
 					</ul>
 				</div>
 			</div>
-			<div className="row pb30 mobile-version">
+			{/* <div className="row pb30 mobile-version">
 				<div className="col-12 pr-1 text-center">
 					<h2 className="h2-text-hidden">Social</h2>
 					<p className="footerSocials text-center"></p>
@@ -159,9 +160,9 @@ const Footer = function (props) {
 					</ul>
 				</div>
 				<div className="col-12 pb-1 highchartsRights small-text">
-					<div className="text-center"> © {new Date().getFullYear()} Highcharts<span className="sep">. All rights reserved. </span></div>
+					<div className="text-center"> © {new Date().getFullYear()} Highcharts<span className="sep">. All rights reserved. </span> 由简数科技提供服务</div>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	</footer>
 }

@@ -4,13 +4,13 @@
 
 import { useEffect } from 'react';
 
-import PRODUCTS from '@data/products.json';
+import PRODUCTS from '@/data/products.json';
 
-import ThemeSelector from '@components/ThemeSelector'
+import ThemeSelector from '@/components/ThemeSelector'
 
 
-import "@styles/css.css";
-import "@styles/demo_index.css";
+// import "@/styles/css.css";
+import "@/styles/main_demo_index.css";
 
 
 function getSuffix(url) {
@@ -86,11 +86,13 @@ function DemoList({ props }) {
 										<div className="demo-container d-flex flex-column">
 											<div className="image-container">
 												<img className="lazy img-thumbnail"
-													data-original={"/images/samples/" + product + '/' + (theme ? theme + '/' : '') + demo.code + '.' + getSuffix(demo.img)}
+													data-original={demo.img}
+													// data-original={"/images/samples/" + product + '/' + (theme ? theme + '/' : '') + demo.code + '.' + getSuffix(demo.img)}
 													alt="" src="/images/lazy-360x250.png" />
 											</div>
 											<div className="footer-container p-1">
 												<p>
+													{demo.isNew && <span class="newDemoIcon">New</span>}
 													{demo.name}
 												</p>
 											</div>

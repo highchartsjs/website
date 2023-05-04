@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import Icon from "@components/icons";
+import Icon from "@/components/icons";
 
 
 const data = [{
@@ -28,7 +28,7 @@ const data = [{
 		href: 'https://www.g2.com/products/highcharts/reviews/highcharts-review-4660500'
 	}
 }, {
-	title: '伟大的制图软件包! \n我用它来做我所有的图表!',
+	title: '伟大的制图软件包，我用它来做我所有的图表!',
 	content: '“支持广泛的图表类型，包括股票图表，这是在金融公司工作特别需要的。付费支持非常好! 我通常在第二天早上就能得到任何问题的答案！”',
 	author: {
 		name: 'Keith D.',
@@ -65,6 +65,13 @@ function Testimonial(props) {
 						</div>
 						<div className="card-body pt-1">
 							<h3 className="card-title m-0 px-0 px-sm-2">{d.title}</h3>
+							<div class="d-flex flex-row justify-content-center pt-1">
+								<Icon name="star" fill={true} color="#00766f"></Icon>
+								<Icon name="star" fill={true} color="#00766f"></Icon>
+								<Icon name="star" fill={true} color="#00766f"></Icon>
+								<Icon name="star" fill={true} color="#00766f"></Icon>
+								<Icon name="star" fill={true} color="#00766f"></Icon>
+							</div>
 							<div className="d-flex flex-row justify-content-center pt-1"> <i className="fas fa-star" aria-hidden="true"></i> <i className="fas fa-star" aria-hidden="true"></i> <i className="fas fa-star" aria-hidden="true"></i> <i className="fas fa-star" aria-hidden="true"></i> <i className="fas fa-star" aria-hidden="true"></i></div>
 							<p className="card-text py-1 px-0 px-sm-2 m-0">{d.content}</p>
 							<p className="font-weight-bold m-0">{d.author.name}</p>

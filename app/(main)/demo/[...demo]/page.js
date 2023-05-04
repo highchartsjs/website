@@ -1,8 +1,8 @@
 
-import THEMES from '@data/themes.json';
-import PRODUCTS from '@data/products.json';
+import THEMES from '@/data/themes.json';
+import PRODUCTS from '@/data/products.json';
 
-import DemoService from "@service/DemoSerive"
+import DemoService from "@/service/DemoSerive"
 
 import DemoPage from '../_demo.js';
 

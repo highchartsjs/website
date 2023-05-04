@@ -1,7 +1,7 @@
 ---
 title:  Highcharts Maps
 type: ADDITIONAL PRODUCT
-description: Highcharts Maps offers a standards-based way for generating schematic maps in web-based projects. It extends the user-friendly Highcharts JavaScript API and allows web developers to build interactive maps to display sales, election results or any other information linked to geography.
+description: Highcharts Maps 为在基于网络的项目中生成示意图提供了一种基于标准的方式。它扩展了用户友好的Highcharts JavaScript API，允许网络开发者建立交互式地图来显示销售、选举结果或任何其他与地理相关的信息。
 buttons:
 - name: 免费下载试用
   link: /download
@@ -23,28 +23,28 @@ demos:
   iframe: https://www.highcharts.com/samples/nonav/highcharts/website/small-demos-maps?charts=projection
   link: /demo/maps/topojson-projection
 features: 
-- title: Map Collection
-  description: We provide a collection of hundreds of maps, all optimized for fast download and rendering with Highcharts Maps. The map collection is also available via NPM.
-  cover: https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2022/06/22102718/feature-maps-collection.png
-- title: Built-in Projections
-  description: Highcharts Maps includes some basic built-in projections, and other projections can be custom built and plugged in.
-  cover: https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2022/06/22102722/feature-maps-projections.png
+- title: 地图数据集
+  description: 我们提供了数以百计的地图集，所有的地图都经过优化，可以通过 Highcharts 地图快速下载和渲染。该地图集也可以通过NPM获得。
+  cover: /uploads/feature-maps-collection.png
+- title: 内置投影
+  description: Highcharts Maps 包括一些基本的内置投影，其他的投影也可以自定义建立并插入其中。
+  cover: /uploads/feature-maps-projections.png
 - title: Color Axis
-  description: Control the color layout of Highcharts Maps choropleth maps in a separate color axis with common options like min, max, logarithmic scale and more.
-  cover: https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2022/06/22102719/feature-maps-coloraxis.png
-- title: Custom Maps
-  description: Create custom maps using SVG, such as this regular map of a made-up place, or this irregular map of a real place.
-  cover: https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2022/06/22102720/feature-maps-custom.png
-- title: Map Types
-  description: Several map types are supported, including map area, map line, points of interest, bubbles on maps, heatmaps and tilemaps.
-  cover: https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2022/06/22102717/feature-map-maptypes.png
-- title: Map Navigation
-  description: Navigate Highcharts Maps with plus/minus buttons, doubleclick to zoom, mousewheel zooming, multitouch and panning.
-  cover: https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2022/06/22102721/feature-maps-navigation.png
-- title: Includes Highcharts
-  description: The Highcharts library is also included, which provides an additional 30 different chart types.
-  cover: https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2022/06/22091436/feature-all-ncludes-highcharts.png
-- title: Temperature Map Series (coming soon)
-  description: Use the temperature map series to highlight areas of your map detailing the density or severity of the data.
-  cover: https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2022/08/16124421/feature-maps-temperature.png
+  description: 在一个单独的颜色轴中控制Highcharts Maps choropleth地图的颜色布局，其常用选项包括最小、最大、对数比例等等。
+  cover: /uploads/feature-maps-coloraxis.png
+- title: 自定义底图
+  description: 使用SVG创建自定义地图，比如这张捏造的地方的常规地图，或者这张真实地方的不规则地图。
+  cover: /uploads/feature-maps-custom.png
+- title: 多种地图类型
+  description: 支持几种地图类型，包括地图区域、地图线、兴趣点、地图上的气泡、热图和瓷砖图。
+  cover: /uploads/feature-map-maptypes.png
+- title: 地图导航功能
+  description: 通过加/减按钮、双击缩放、鼠标滚轮缩放、多点触摸和平移来导航Highcharts地图。
+  cover: /uploads/feature-maps-navigation.png
+- title: 包含 Highcharts
+  description: Highcharts库也包括在内，它提供了另外30种不同的图表类型。
+  cover: /uploads/feature-all-ncludes-highcharts.png
+- title: 热力地图 （即将推出）
+  description: 使用热力地图系列来突出你的地图上详细说明数据的密度或严重程度的区域。
+  cover: /uploads/feature-maps-temperature.png
 ---

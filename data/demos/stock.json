@@ -1,231 +1,237 @@
 [
 	{
-		"name": "General",
-		"code": "general",
-		"children": [
-			{
-				"code": "stock-tools-gui",
-				"name": "Stock chart with GUI",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/stock-tools-gui/thumbnail.png"
-			},
-			{
-				"code": "basic-line",
-				"name": "Single line series",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/basic-line/thumbnail.png"
-			},
-			{
-				"code": "candlestick-and-volume",
-				"name": "Two panes, candlestick and volume",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/candlestick-and-volume/thumbnail.png"
-			},
-			{
-				"code": "compare",
-				"name": "Compare multiple series",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/compare/thumbnail.png"
-			},
-			{
-				"code": "data-grouping",
-				"name": "52,000 points with data grouping",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/data-grouping/thumbnail.png"
-			},
-			{
-				"code": "lazy-loading",
-				"name": "1.7 million points with async loading",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/lazy-loading/thumbnail.png"
-			},
-			{
-				"code": "intraday-area",
-				"name": "Intraday area",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/intraday-area/thumbnail.png"
-			},
-			{
-				"code": "intraday-breaks",
-				"name": "Intraday with breaks",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/intraday-breaks/thumbnail.png"
-			},
-			{
-				"code": "intraday-candlestick",
-				"name": "Intraday candlestick",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/intraday-candlestick/thumbnail.png"
-			},
-			{
-				"code": "flags-general",
-				"name": "Flags marking events",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/flags-general/thumbnail.png"
-			},
-			{
-				"code": "cumulative-sum",
-				"name": "Cumulative Sum",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/cumulative-sum/thumbnail.png"
-			},
-			{
-				"code": "responsive",
-				"name": "Responsive chart",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/responsive/thumbnail.png"
-			},
-			{
-				"code": "dynamic-update",
-				"name": "Dynamically updated data",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/dynamic-update/thumbnail.png"
-			}
-		]
+	  "name": "General",
+	  "code": "general",
+	  "children": [
+		 {
+			"code": "responsive",
+			"name": "Responsive chart",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/responsive/thumbnail.png"
+		 },
+		 {
+			"code": "stock-tools-gui",
+			"name": "Stock chart with GUI",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/stock-tools-gui/thumbnail.png"
+		 },
+		 {
+			"code": "flags-general",
+			"name": "Flags marking events",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/flags-general/thumbnail.png"
+		 },
+		 {
+			"code": "intraday-candlestick",
+			"name": "Intraday candlestick",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/intraday-candlestick/thumbnail.png"
+		 },
+		 {
+			"code": "intraday-breaks",
+			"name": "Intraday with breaks",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/intraday-breaks/thumbnail.png"
+		 },
+		 {
+			"code": "intraday-area",
+			"name": "Intraday area",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/intraday-area/thumbnail.png"
+		 },
+		 {
+			"code": "lazy-loading",
+			"name": "1.7 million points with async loading",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/lazy-loading/thumbnail.png"
+		 },
+		 {
+			"code": "soundscape",
+			"isNew": true,
+			"name": "NEWSoundscape",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/soundscape/thumbnail.png"
+		 },
+		 {
+			"code": "data-grouping",
+			"name": "52,000 points with data grouping",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/data-grouping/thumbnail.png"
+		 },
+		 {
+			"code": "compare",
+			"name": "Compare multiple series",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/compare/thumbnail.png"
+		 },
+		 {
+			"code": "candlestick-and-volume",
+			"name": "Two panes, candlestick and volume",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/candlestick-and-volume/thumbnail.png"
+		 },
+		 {
+			"code": "basic-line",
+			"name": "Single line series",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/basic-line/thumbnail.png"
+		 },
+		 {
+			"code": "cumulative-sum",
+			"name": "Cumulative Sum",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/cumulative-sum/thumbnail.png"
+		 },
+		 {
+			"code": "dynamic-update",
+			"name": "Dynamically updated data",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/dynamic-update/thumbnail.png"
+		 }
+	  ]
 	},
 	{
-		"name": "Chart types",
-		"code": "chart",
-		"children": [
-			{
-				"code": "heikinashi",
-				"name": "Heikin Ashi",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/heikinashi/thumbnail.png"
-			},
-			{
-				"code": "hlc",
-				"name": "HLC",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/hlc/thumbnail.png"
-			},
-			{
-				"code": "hollow-candlestick",
-				"name": "Hollow Candlestick",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/hollow-candlestick/thumbnail.png"
-			},
-			{
-				"code": "line-markers",
-				"name": "Line with markers and shadow",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/line-markers/thumbnail.png"
-			},
-			{
-				"code": "spline",
-				"name": "Spline",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/spline/thumbnail.png"
-			},
-			{
-				"code": "step-line",
-				"name": "Step line",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/step-line/thumbnail.png"
-			},
-			{
-				"code": "area",
-				"name": "Area",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/area/thumbnail.png"
-			},
-			{
-				"code": "areaspline",
-				"name": "Area spline",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/areaspline/thumbnail.png"
-			},
-			{
-				"code": "arearange",
-				"name": "Area range",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/arearange/thumbnail.png"
-			},
-			{
-				"code": "depth-chart",
-				"name": "Depth chart",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/depth-chart/thumbnail.png"
-			},
-			{
-				"code": "areasplinerange",
-				"name": "Area spline range",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/areasplinerange/thumbnail.png"
-			},
-			{
-				"code": "candlestick",
-				"name": "Candlestick",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/candlestick/thumbnail.png"
-			},
-			{
-				"code": "ohlc",
-				"name": "OHLC",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/ohlc/thumbnail.png"
-			},
-			{
-				"code": "column",
-				"name": "Column",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/column/thumbnail.png"
-			},
-			{
-				"code": "columnrange",
-				"name": "Column range",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/columnrange/thumbnail.png"
-			},
-			{
-				"code": "markers-only",
-				"name": "Point markers only",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/markers-only/thumbnail.png"
-			}
-		]
+	  "name": "Chart types",
+	  "code": "chart-types",
+	  "children": [
+		 {
+			"code": "columnrange",
+			"name": "Column range",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/columnrange/thumbnail.png"
+		 },
+		 {
+			"code": "column",
+			"name": "Column",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/column/thumbnail.png"
+		 },
+		 {
+			"code": "ohlc",
+			"name": "OHLC",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/ohlc/thumbnail.png"
+		 },
+		 {
+			"code": "candlestick",
+			"name": "Candlestick",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/candlestick/thumbnail.png"
+		 },
+		 {
+			"code": "areasplinerange",
+			"name": "Area spline range",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/areasplinerange/thumbnail.png"
+		 },
+		 {
+			"code": "depth-chart",
+			"name": "Depth chart",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/depth-chart/thumbnail.png"
+		 },
+		 {
+			"code": "arearange",
+			"name": "Area range",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/arearange/thumbnail.png"
+		 },
+		 {
+			"code": "areaspline",
+			"name": "Area spline",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/areaspline/thumbnail.png"
+		 },
+		 {
+			"code": "area",
+			"name": "Area",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/area/thumbnail.png"
+		 },
+		 {
+			"code": "step-line",
+			"name": "Step line",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/step-line/thumbnail.png"
+		 },
+		 {
+			"code": "spline",
+			"name": "Spline",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/spline/thumbnail.png"
+		 },
+		 {
+			"code": "line-markers",
+			"name": "Line with markers and shadow",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/line-markers/thumbnail.png"
+		 },
+		 {
+			"code": "hollow-candlestick",
+			"name": "Hollow Candlestick",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/hollow-candlestick/thumbnail.png"
+		 },
+		 {
+			"code": "hlc",
+			"name": "HLC",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/hlc/thumbnail.png"
+		 },
+		 {
+			"code": "heikinashi",
+			"name": "Heikin Ashi",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/heikinashi/thumbnail.png"
+		 },
+		 {
+			"code": "markers-only",
+			"name": "Point markers only",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/markers-only/thumbnail.png"
+		 }
+	  ]
 	},
 	{
-		"name": "Various features",
-		"code": "various",
-		"children": [
-			{
-				"code": "stock-tools-custom-gui",
-				"name": "Stock chart with custom GUI",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/stock-tools-custom-gui/thumbnail.png"
-			},
-			{
-				"code": "yaxis-plotlines",
-				"name": "Plot lines on Y axis",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/yaxis-plotlines/thumbnail.png"
-			},
-			{
-				"code": "yaxis-plotbands",
-				"name": "Plot bands on Y axis",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/yaxis-plotbands/thumbnail.png"
-			},
-			{
-				"code": "yaxis-reversed",
-				"name": "Reversed Y axis",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/yaxis-reversed/thumbnail.png"
-			},
-			{
-				"code": "styled-scrollbar",
-				"name": "Styled scrollbar",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/styled-scrollbar/thumbnail.png"
-			},
-			{
-				"code": "scrollbar-disabled",
-				"name": "Disabled scrollbar",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/scrollbar-disabled/thumbnail.png"
-			},
-			{
-				"code": "navigator-disabled",
-				"name": "Disabled navigator",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/navigator-disabled/thumbnail.png"
-			}
-		]
+	  "name": "Various features",
+	  "code": "various-features",
+	  "children": [
+		 {
+			"code": "scrollbar-disabled",
+			"name": "Disabled scrollbar",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/scrollbar-disabled/thumbnail.png"
+		 },
+		 {
+			"code": "styled-scrollbar",
+			"name": "Styled scrollbar",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/styled-scrollbar/thumbnail.png"
+		 },
+		 {
+			"code": "yaxis-reversed",
+			"name": "Reversed Y axis",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/yaxis-reversed/thumbnail.png"
+		 },
+		 {
+			"code": "yaxis-plotbands",
+			"name": "Plot bands on Y axis",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/yaxis-plotbands/thumbnail.png"
+		 },
+		 {
+			"code": "yaxis-plotlines",
+			"name": "Plot lines on Y axis",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/yaxis-plotlines/thumbnail.png"
+		 },
+		 {
+			"code": "stock-tools-custom-gui",
+			"name": "Stock chart with custom GUI",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/stock-tools-custom-gui/thumbnail.png"
+		 },
+		 {
+			"code": "navigator-disabled",
+			"name": "Disabled navigator",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/navigator-disabled/thumbnail.png"
+		 }
+	  ]
 	},
 	{
-		"name": "Flags and Technical indicators",
-		"code": "flags",
-		"children": [
-			{
-				"code": "all-indicators",
-				"name": "All technical indicators",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/all-indicators/thumbnail.png"
-			},
-			{
-				"code": "macd-pivot-points",
-				"name": "MACD and Pivot points",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/macd-pivot-points/thumbnail.png"
-			},
-			{
-				"code": "sma-volume-by-price",
-				"name": "SMA and Volume by price",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/sma-volume-by-price/thumbnail.png"
-			},
-			{
-				"code": "flags-placement",
-				"name": "Flags placement",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/flags-placement/thumbnail.png"
-			},
-			{
-				"code": "flags-shapes",
-				"name": "Flags shapes and colors",
-				"img": "https://www.highcharts.com/demo/images/samples/stock/demo/flags-shapes/thumbnail.png"
-			}
-		]
+	  "name": "Flags and Technical indicators",
+	  "code": "flags-and-technical-indicators",
+	  "children": [
+		 {
+			"code": "flags-placement",
+			"name": "Flags placement",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/flags-placement/thumbnail.png"
+		 },
+		 {
+			"code": "sma-volume-by-price",
+			"name": "SMA and Volume by price",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/sma-volume-by-price/thumbnail.png"
+		 },
+		 {
+			"code": "macd-pivot-points",
+			"name": "MACD and Pivot points",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/macd-pivot-points/thumbnail.png"
+		 },
+		 {
+			"code": "all-indicators",
+			"name": "All technical indicators",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/all-indicators/thumbnail.png"
+		 },
+		 {
+			"code": "flags-shapes",
+			"name": "Flags shapes and colors",
+			"img": "https://www.highcharts.com/demo/images/samples/stock/demo/flags-shapes/thumbnail.png"
+		 }
+	  ]
 	}
-]
+ ]

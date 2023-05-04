@@ -1,7 +1,7 @@
 
-import Accordion from "@components/Accordion";
-import getTitle from '@components/Title';
-import Breadcrumb from '@components/Breadcrumb';
+import Accordion from "@/components/Accordion";
+import getTitle from '@/components/Title';
+import Breadcrumb from '@/components/Breadcrumb';
 
 
 const items = [{
@@ -33,13 +33,13 @@ const items = [{
 }];
 
 const advantageItems = [{
-	title: 'Highcharts Forun',
+	title: 'Highcharts 社区',
 	content: `<p>Enter your <button aria-label="Explanation of license ID" aria-expanded="false" id="tooltipbtn-1" data-title="Your License ID can be found on your License Statement received upon purchase." class="tooltip-btn">License ID <i class="fa fa-question-circle-o" aria-hidden="true"></i> </button> number in the subject when opening a ticket in our <a href="https://support.highcharts.com/support/home">Support portal</a></p>`
 }, {
-	title: 'Chat With Us',
+	title: '即时通讯软件联系',
 	content: `<p>To chat with our support team; contact us by <a href="https://www.skype.com/en/get-skype/">Skype</a> on HighchartsSupport. Be sure to insert your <button aria-label="Explanation of license ID" aria-expanded="false" id="tooltipbtn-1" data-title="Your License ID can be found on your License Statement received upon purchase." class="tooltip-btn">License ID <i class="fa fa-question-circle-o" aria-hidden="true"></i> </button> number when prompted for a message to send along with the contact request. Our support team is available between 10:00 and 18:00 CET (Central European Time) business days.</p>`
 }, {
-	title: 'Email Us',
+	title: '邮件联系',
 	content: `<p>Enter your&nbsp;<button aria-label="Explanation of license ID" aria-expanded="false" id="tooltipbtn-1" data-title="Your License ID can be found on your License Statement received upon purchase." class="tooltip-btn">License ID <i class="fa fa-question-circle-o" aria-hidden="true"></i> </button> number&nbsp;in the subject when you send an email to&nbsp;support@highcharts.com.</p>`
 }]
 
@@ -56,6 +56,7 @@ export default function Support() {
 				<div class="container">
 					<div class="row ">
 						<div class="col-12 col-md-4 pb-2 pt0 pt-md-2 d-flex flex-column justify-content-center justify-content-md-start order-2">
+						<h2 class="color-mudLogo pl-1 mt-0 mt-md-4 index-heading">Index</h2>
 							<ol>
 								<li><a href="/support/#general-support-section">服务与支持 &amp; 社区</a></li>
 								<li><a href="/support/#advantage-support-section">高级技术支持服务</a></li>

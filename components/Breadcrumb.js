@@ -1,7 +1,7 @@
 
 
-import styles from "@styles/components/breadcrumb.module.scss"
-import { navbarMap } from "@data/navbar";
+import styles from "@/styles/components/breadcrumb.module.scss"
+import { navbarMap } from "@/data/navbar";
 
 /**
  * 
@@ -11,6 +11,7 @@ import { navbarMap } from "@data/navbar";
 
 
 export default function Breadcurmb({ paths, drakTheme }) {
+
 
 	let items = [];
 
@@ -28,6 +29,7 @@ export default function Breadcurmb({ paths, drakTheme }) {
 			items.push(navbarMap[url]);
 		}
 	}
+	console.log(items);
 
 	return <div className={styles.breadrumb + (drakTheme ? ' ' + styles.drak : '')}>
 		<div className="col-12">

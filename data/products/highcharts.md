@@ -1,5 +1,5 @@
 ---
-title:  Highcharts JS
+title:  Highcharts Core
 description: Highcharts 是我们产品套件的核心库, 是一个基于 SVG 的纯 JavaScript 图表库， 使开发者能够轻松创建响应式、互动式和可访问的图表。我们的库包括所有的标准图表类型和更多。从面积图到 X-range，我们已经覆盖了您的图表需求。我们简单参数架构允许深度定制，并且可以通过 JavaScript 或 CSS 进行样式设计。
 buttons:
 - name: 免费下载试用
@@ -10,7 +10,7 @@ buttons:
   class: btn-secondary	
 demos:
 - name: 和弦图
-  iframe: https://www.highcharts.com/samples/nonav/highcharts/website/small-demos-chart?charts=dependencyWheel
+  iframe: /samples/highcharts/dependencyWheel.html
   link: /demo/dependency-wheel/brand-light
 - name: 堆叠面积图
   iframe: https://www.highcharts.com/samples/nonav/highcharts/website/small-demos-chart?charts=area

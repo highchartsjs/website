@@ -1,19 +1,19 @@
-import DocService from '@service/DocService';
-import sidebar from '@data/docs/sidebars';
+import DocService from '@/service/DocService';
+import sidebar from '@/data/docs/sidebars';
 
 import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import remarkHtml from 'remark-html';
 import remarkGfm from 'remark-gfm';
-import markToc from '@helper/markd-toc';
+import markToc from '@/helper/markd-toc';
 
-import Menu from '@components/Menu';
-import DocNav from '@components/DocNav';
+import Menu from '@/components/Menu';
+import DocNav from '@/components/DocNav';
 
-import getTitle from '@components/Title';
+import getTitle from '@/components/Title';
 
-import '@styles/menu.scss';
-import "@styles/docs.scss";
+import '@/styles/menu.scss';
+import "@/styles/docs.scss";
 
 export async function generateStaticParams() {
 

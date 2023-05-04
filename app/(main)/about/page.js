@@ -1,7 +1,11 @@
 
+import Breadcrumb from '@/components/Breadcrumb';
+
+
 function About() {
 	return <div id="full-width-page-wrapper">
 		<div id="content">
+			<Breadcrumb paths='about'></Breadcrumb>
 			<main class="site-main" id="main" role="main">
 				<div class="content-fluid pt-1">
 					<div class="container">
@@ -88,7 +92,7 @@ function About() {
 							</div>
 						</div>
 						<div class="row pb-2 pb-md-3">
-							<div class="col-md-12"> <img decoding="async" src="https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2022/09/30070414/20220916_111222.jpg" alt="group-picture of all employees" /></div>
+							<div class="col-md-12"> <img decoding="async" src="/uploads/20220916_111222.jpg" alt="group-picture of all employees" /></div>
 						</div>
 					</div>
 				</div>
@@ -122,7 +126,8 @@ function About() {
 										Highcharts and Accessibility.</p>
 								</div>
 							</div>
-							<div class="col-12 col-xl-6 px-0 text-center"> <img decoding="async" alt="" class="about-image" src="https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2021/10/05150628/illo_mission.jpg" /></div>
+							<div class="col-12 col-xl-6 px-0 text-center">
+								 <img decoding="async" alt="" class="about-image" src="/uploads/illo_mission.jpg" /></div>
 						</div>
 						<div class="row bkgWhite" id="values">
 							<div class="col-12 col-xl-6 my-auto px-md-0 order-md-12">
@@ -140,7 +145,9 @@ function About() {
 									being transparent in all we do, and trusting each other and our customers.<p></p>
 								</div>
 							</div>
-							<div class="col-12 col-xl-6 px-0 order-md-1 text-center"> <img decoding="async" alt="" class="about-image" src="https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2021/11/05174609/illo_values.png" /></div>
+							<div class="col-12 col-xl-6 px-0 order-md-1 text-center"> 
+							<img decoding="async" alt="" class="about-image" src="/uploads/illo_values.png" />
+							</div>
 						</div>
 						<div class="row bkgWhite" id="sustainability">
 							<div class="col-12 col-xl-6 bkgWhite px-md-0 my-auto">
@@ -155,7 +162,8 @@ function About() {
 										This is an imperative step toward formalizing our work with CSR.</p>
 								</div>
 							</div>
-							<div class="col-12 col-xl-6 px-0 text-center"> <img decoding="async" alt="" class="about-image" src="https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2021/10/05150629/illo_sustainability.png" /></div>
+							<div class="col-12 col-xl-6 px-0 text-center">
+								 <img decoding="async" alt="" class="about-image" src="/uploads/illo_sustainability.png" /></div>
 						</div>
 					</div>
 				</div>
@@ -181,7 +189,8 @@ function About() {
 				</div>
 				<div class="content-fluid about-bottom">
 					<div class="row about-bottom-row">
-						<div class="col-6 offset-md-5 col-md-2 bkgPurplePunch text-center"> <img decoding="async" class="p-2" alt="" src="https://wp-assets.highcharts.com/svg/icon_bot_purple.svg" /></div>
+						<div class="col-6 offset-md-5 col-md-2 bkgPurplePunch text-center">
+							 <img decoding="async" class="p-2" alt="" src="/svg/icon_bot_purple.svg" /></div>
 						<div class="col-6 col-md-5 bkgMudLogo d-flex align-items-center p-2">
 							<h2><a href="/people" id="DiscoverTheTeam" class="txtWhite about-discover-team-link">Discover the team</a></h2>
 						</div>
