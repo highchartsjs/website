@@ -4,6 +4,7 @@ require('dotenv').config({
 });
 const express = require('express');
 
+
 const app = express();
 const port = process.env.SERVER_PORT || 3000;
 
@@ -16,7 +17,6 @@ const APIRoute = require('./server/route/api');
 
 app.use('/code', CodeRoute);
 app.use('/api', APIRoute);
-
 
 app.use((err, req, res, next) => {
 	let errMessage = err.stack.split('\n');

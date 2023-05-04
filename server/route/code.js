@@ -8,6 +8,7 @@ const files = require('../../data/files.json');
 router.get('/data.json', (req, res) => {
 	res.status(200).json({
 		version: [
+			'11.0.0',
 			'10.3.3',
 			'10.3.2',
 			'10.3.0',
@@ -25,7 +26,6 @@ router.get('/data.json', (req, res) => {
 });
 
 router.get('/*', (req, res) => {
-	
 	let redirect = CodeRequestHandler(req.url, process.env);
 	if(redirect) {
 		res.redirect(req.protocol + '://' + redirect);

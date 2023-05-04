@@ -59,7 +59,7 @@ module.exports = (pathname, _env) => {
 
 		let file = (product ? product + '/' : '') + version + '/' + paths.join('/');
 
-		redirect = _env.CDN_DOMAIN + '/' + file;
+		redirect = _env.CDN_DOMAIN  + file;
 	}
 
 	return redirect;

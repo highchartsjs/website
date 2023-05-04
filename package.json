@@ -3,37 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "export": "next build && next export"
+    "start": "node server.js"
   },
   "dependencies": {
-    "eslint": "8.29.0",
-    "eslint-config-next": "13.0.6",
     "gray-matter": "^4.0.3",
-    "nanoid": "3.3.4",
-    "next": "^13.3.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-syntax-highlighter": "^15.5.0",
-    "remark": "^14.0.2",
-    "remark-gfm": "^3.0.1",
-    "remark-html": "^15.0.2",
-    "unified": "^10.1.2",
-    "unist-util-visit": "^4.1.2"
+    "nanoid": "3.3.4"
   },
   "devDependencies": {
     "@types/node": "18.16.3",
     "@types/react": "18.2.0",
-    "autoprefixer": "^10.4.13",
-    "babel-plugin-inline-react-svg": "^2.0.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "postcss": "^8.4.21",
-    "sass": "^1.56.1",
-    "typescript": "5.0.4",
     "walk": "^2.3.15"
   }
 }

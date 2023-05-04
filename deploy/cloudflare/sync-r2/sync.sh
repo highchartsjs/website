@@ -1,1 +1,0 @@
-rclone sync /Users/js/workspace/highchartsjs/website/data/code/ cloudflare:/ --config ./rclone.conf
