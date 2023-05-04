@@ -8,6 +8,7 @@
 	"stock": {
 		"name": "Highcharts Stock",
 		"code": "stock",
+		"fullCode": "highstock",
 		"main": "highstock.js",
 		"zip": "Highcharts-Stock",
 		"type": "add-product",
@@ -17,6 +18,7 @@
 	"maps": {
 		"name": "Highcharts Maps",
 		"code": "maps",
+		"fullCode": "highmaps",
 		"main": "highmaps.js",
 		"zip": "Highcharts-Maps",
 		"description": "Create interactive map charts with drill-down and touch support.",
