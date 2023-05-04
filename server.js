@@ -11,7 +11,7 @@ const port = process.env.SERVER_PORT || 3000;
 const { customAlphabet } = require('nanoid');
 const nanoid = customAlphabet('abcdefghijklmnopqrstuvwxzy', 10)
 
-
+app.set('trust proxy', true);
 const CodeRoute = require('./server/route/code');
 const APIRoute = require('./server/route/api');
 
